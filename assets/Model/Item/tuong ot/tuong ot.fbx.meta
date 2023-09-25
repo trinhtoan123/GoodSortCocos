@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039",
+  "files": [],
+  "subMetas": {
+    "bf499": {
+      "importer": "gltf-mesh",
+      "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039@bf499",
+      "displayName": "",
+      "id": "bf499",
+      "name": "tuong_ot.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "45bc8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039@45bc8",
+      "displayName": "",
+      "id": "45bc8",
+      "name": "file25.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "491b8": {
+      "importer": "texture",
+      "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039@491b8",
+      "displayName": "",
+      "id": "491b8",
+      "name": "file25.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cba74e55-d9be-4dbb-839c-ed3982117039@45bc8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ca974": {
+      "importer": "gltf-material",
+      "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039@ca974",
+      "displayName": "",
+      "id": "ca974",
+      "name": "tuong_ot1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f84a4": {
+      "importer": "gltf-scene",
+      "uuid": "cba74e55-d9be-4dbb-839c-ed3982117039@f84a4",
+      "displayName": "",
+      "id": "f84a4",
+      "name": "tuong ot.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file25",
+        "uri": "cba74e55-d9be-4dbb-839c-ed3982117039@45bc8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "cba74e55-d9be-4dbb-839c-ed3982117039@f84a4",
+    "assetFinder": {
+      "meshes": [
+        "cba74e55-d9be-4dbb-839c-ed3982117039@bf499"
+      ],
+      "skeletons": [],
+      "textures": [
+        "cba74e55-d9be-4dbb-839c-ed3982117039@491b8"
+      ],
+      "materials": [
+        "cba74e55-d9be-4dbb-839c-ed3982117039@ca974"
+      ],
+      "scenes": [
+        "cba74e55-d9be-4dbb-839c-ed3982117039@f84a4"
+      ]
+    }
+  }
+}
