@@ -1,68 +1,62 @@
-import { _decorator, BoxCollider, Camera, Component, EventMouse, EventTouch, geometry, input, Input, Node, PhysicsSystem, Vec3 } from 'cc';
+import { _decorator, BoxCollider, Camera, CCFloat, Component, EventMouse, EventTouch, geometry, input, Input, math, Node, PhysicsSystem, tween, Vec3 } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('ItemElement')
 export class ItemElement extends Component {
-    @property(Camera)
-    cma: Camera;
 
-    target: Node;
-    private _ray: geometry.Ray;
-    private offset: Vec3 = new Vec3();
-    isDraging: boolean = false;
-    onLoad() {
-        // Register a touch or mouse event listener
-        input.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
-        input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
-        input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
+    isSelectItem:boolean;
+    posOriginIem :Vec3;
+    @property(CCFloat)tweenDuration:number;
+    // private _ray: geometry.Ray;
 
-        // You can also use 'MOUSE_DOWN' event for mouse input
+    protected onLoad(): void {
+        
+    }
+    protected update(dt: number): void {
+        this.CheckSelectedBox();
     }
 
-    onDestroy() {
-        // Unregister the event listener when the script is destroyed
-        this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
+    StartGame(){
+        this.posOriginIem  = this.node.getPosition();
     }
-
-    onTouchStart(event: EventTouch) {
-        var touch = event.touch!;
-        this._ray = new geometry.Ray();
-        this.cma.screenPointToRay(touch.getLocationX(), touch.getLocationY(), this._ray);
-        if (PhysicsSystem.instance.raycastClosest(this._ray)) {
+    CheckSelectedBox(){
+        // let outRay = new geometry.Ray();
+        // geometry.Ray.fromPoints(outRay, this.node.position, math.Vec3.RIGHT);
+        const worldRay = new geometry.Ray(0, -1, 0, 0, 0, 0);
+        const mask = 0xffffffff;
+        const maxDistance = 10000000;
+        const queryTrigger = true;
+        if (PhysicsSystem.instance.raycastClosest(worldRay,mask,maxDistance,queryTrigger)) {
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
-            if (item.collider.node.getComponent(BoxCollider)!=null) {
-                this.isDraging = true;
-                this.target = item.collider.node;
-
-            }
-        } else {
-            console.log('raycast does not hit the target node !');
+            if (item.collider.node.getComponent(BoxCollider)!=null ) {
+                console.log("item" + item.collider.node.name);
+             }
         }
     }
-    onTouchMove(event: EventTouch) {
-        if (!this.isDraging)
-            return;
-    var touch = event.touch!;
-    let touches = event.getTouches();
-    let touch1 = touches[0];
-    let delta1 = touch1.getDelta();
 
-    this.offset.x = delta1.x / 40;
-    this.offset.y = delta1.y / 40;
-    let cam_pos = this.target.position.clone();
-    let newPos = new Vec3(
-        cam_pos.x + this.offset.x,
-        cam_pos.y + this.offset.y,
-        this.target.position.z
-    );
-    this.target.position = newPos;
-           
-    }
-     onTouchEnd(event: EventTouch) {
-       this.isDraging = false;
+
+    public SelectItem(){
+        this.node.setPosition(this.node.position.x, this.node.position.y, -1);
     }
 
+
+
+    MoveToPosTarget(target:Node){
+        this.TweenMove(new Vec3(target.position.x, target.position.y, 0));
+    }
+    MoveToPosOrigin(){
+        this.TweenMove(this.posOriginIem);
+    }
+
+    TweenMove(targetPos:Vec3){
+        tween(this.node.position).to(this.tweenDuration,targetPos,
+            {
+                onUpdate: (target:Vec3, radius:number)=>{
+                    this.node.position = target;
+                }
+            }).start();
+    }
      
 }
 

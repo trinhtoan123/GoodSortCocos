@@ -1,0 +1,12 @@
+{
+  "layer": [
+    {
+      "name": "Item",
+      "value": 1
+    },
+    {
+      "name": "Box",
+      "value": 2
+    }
+  ]
+}
