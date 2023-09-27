@@ -24,17 +24,17 @@
         "__id__": 7
       },
       {
-        "__id__": 115
+        "__id__": 114
       }
     ],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 117
+      "__id__": 116
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 118
+      "__id__": 117
     },
     "_id": "cbe7ec87-0e25-4031-9232-38c672dedd88"
   },
@@ -224,9 +224,6 @@
     "_children": [
       {
         "__id__": 8
-      },
-      {
-        "__id__": 114
       }
     ],
     "_active": true,
@@ -677,11 +674,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "tweenDuration": 0,
-    "Box": {
-      "__id__": 9
-    },
-    "_id": "adZyHdLjdNYaHlZEaibpW2"
+    "_id": "80mOqdk7ZPXYHBzddQXeOT"
   },
   {
     "__type__": "cc.Node",
@@ -3948,45 +3941,6 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Item",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 7
-    },
-    "_children": [],
-    "_active": true,
-    "_components": [],
-    "_prefab": null,
-    "_lpos": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_lrot": {
-      "__type__": "cc.Quat",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 1
-    },
-    "_lscale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_layer": 1073741824,
-    "_euler": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_id": "81SQyPIlREwqSETF4IjTsv"
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "GameManager",
     "_objFlags": 0,
     "_parent": {
@@ -3996,7 +3950,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 116
+        "__id__": 115
       }
     ],
     "_prefab": null,
@@ -4033,7 +3987,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 115
+      "__id__": 114
     },
     "_enabled": true,
     "__prefab": null,
@@ -4049,19 +4003,19 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 119
+      "__id__": 118
     },
     "shadows": {
-      "__id__": 120
+      "__id__": 119
     },
     "_skybox": {
-      "__id__": 121
+      "__id__": 120
     },
     "fog": {
-      "__id__": 122
+      "__id__": 121
     },
     "octree": {
-      "__id__": 123
+      "__id__": 122
     }
   },
   {

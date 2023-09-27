@@ -8,7 +8,7 @@ export class TounchControler extends Component {
     @property(Camera)
     cma: Camera;
 
-    target: Node;
+    @property(Node)target: Node;
     private _ray: geometry.Ray;
     private offset: Vec3 = new Vec3();
     isDraging: boolean = false;
@@ -31,12 +31,13 @@ export class TounchControler extends Component {
         this._ray = new geometry.Ray();
         this.cma.screenPointToRay(touch.getLocationX(), touch.getLocationY(), this._ray);
         if (PhysicsSystem.instance.raycastClosest(this._ray)) {
+            console.log("Run21");
+
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
             if (item.collider.node.getComponent(BoxCollider)!=null && item.collider.node.getComponent(ItemElement)!=null) {
                 this.isDraging = true;
                 this.target = item.collider.node;
-                
             }
         }
     }
@@ -56,7 +57,10 @@ export class TounchControler extends Component {
         this.target.position.z
     );
     this.target.position = newPos;
-    this.target.getComponent(ItemElement).SelectItem();
+    if(this.target!=null){
+        this.target.getComponent(ItemElement).SelectItem();
+    }
+
     }
      onTouchEnd(event: EventTouch) {
        this.isDraging = false;
