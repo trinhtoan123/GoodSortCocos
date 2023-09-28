@@ -25,19 +25,23 @@ export class TounchControler extends Component {
         // Unregister the event listener when the script is destroyed
         this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
     }
+    protected update(dt: number): void {
+       
+       
+
+    }
 
     onTouchStart(event: EventTouch) {
         var touch = event.touch!;
         this._ray = new geometry.Ray();
         this.cma.screenPointToRay(touch.getLocationX(), touch.getLocationY(), this._ray);
         if (PhysicsSystem.instance.raycastClosest(this._ray)) {
-            console.log("Run21");
-
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
             if (item.collider.node.getComponent(BoxCollider)!=null && item.collider.node.getComponent(ItemElement)!=null) {
                 this.isDraging = true;
                 this.target = item.collider.node;
+                this.target.getComponent(ItemElement).SelectItem();
             }
         }
     }
@@ -58,12 +62,12 @@ export class TounchControler extends Component {
     );
     this.target.position = newPos;
     if(this.target!=null){
-        this.target.getComponent(ItemElement).SelectItem();
     }
 
     }
      onTouchEnd(event: EventTouch) {
        this.isDraging = false;
+       this.target.getComponent(ItemElement).UnSelectItem();
     }
 
 }

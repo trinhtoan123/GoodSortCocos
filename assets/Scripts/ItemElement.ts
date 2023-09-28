@@ -1,5 +1,6 @@
-import { _decorator, BoxCollider, CCFloat, Component, director, geometry, math, Node, PhysicsRayResult, PhysicsSystem, tween, Vec3 } from 'cc';
+import { _decorator, BoxCollider, CCFloat, Component, director, geometry, math, Node, PhysicsRayResult, PhysicsSystem, tween, v3, Vec3 } from 'cc';
 import { BoxElement } from './BoxElement';
+import { LayerItem } from './LayerItem';
 const { ccclass, property } = _decorator;
 
 @ccclass('ItemElement')
@@ -7,23 +8,32 @@ export class ItemElement extends Component {
     isSelectItem: boolean;
     posOriginIem: Vec3;
     @property(CCFloat) tweenDuration: number;
-    private _ray: geometry.Ray;
-    protected onLoad(): void {
+    isSelected:boolean;
+    public currentLayer:LayerItem;
+    
+
+
+    protected start(): void {
+        console.log(this.node.getPosition())
     }
+
     protected update(deltaTime: number): void {
+
         this.CheckSelectedBox();
     }
 
     StartGame() {
-        this.posOriginIem = this.node.getPosition();
+        // this.posOriginIem = this.node.getPosition();
     }
     CheckSelectedBox() {
-        this._ray = new geometry.Ray();
-        let startPoint = new Vec3(this.node.getWorldPosition().x, this.node.getWorldPosition().y, 0);
-        geometry.Ray.fromPoints(this._ray, startPoint, startPoint.add(Vec3.FORWARD));
-        console.log("Run1");
-        if (PhysicsSystem.instance.raycastClosest(this._ray)) {
-            console.log("Run2");
+        if(!this.isSelected) 
+            return;
+        const startPoint :Vec3 = new Vec3(this.node.getWorldPosition().x, this.node.getWorldPosition().y, this.node.getWorldPosition().z);
+        const target:Vec3 = new Vec3(startPoint.x, startPoint.y, startPoint.z - 10);
+
+        const outRay = geometry.Ray.create(this.node.getWorldPosition().x, this.node.getWorldPosition().y, this.node.getWorldPosition().z
+            , target.x, target.y, target.z );
+        if (PhysicsSystem.instance.raycastClosest(outRay)) {
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
             if (item.collider.node.getComponent(BoxCollider) != null && item.collider.node.getComponent(BoxElement)) {
@@ -34,7 +44,13 @@ export class ItemElement extends Component {
 
     public SelectItem() {
         this.node.setPosition(this.node.position.x, this.node.position.y, 2);
+        this.isSelected = true;
+
     }
+    public UnSelectItem() {
+        this.isSelected = false;
+    }
+    
     MoveToPosTarget(target: Node) {
         this.TweenMove(new Vec3(target.position.x, target.position.y, 0));
     }
