@@ -22,15 +22,8 @@ export class TounchControler extends Component {
     }
 
     onDestroy() {
-        // Unregister the event listener when the script is destroyed
         this.node.off(Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
     }
-    protected update(dt: number): void {
-       
-       
-
-    }
-
     onTouchStart(event: EventTouch) {
         var touch = event.touch!;
         this._ray = new geometry.Ray();
@@ -61,11 +54,11 @@ export class TounchControler extends Component {
         this.target.position.z
     );
     this.target.position = newPos;
-    if(this.target!=null){
     }
 
-    }
      onTouchEnd(event: EventTouch) {
+        if(this.target==null)
+            return;
        this.isDraging = false;
        this.target.getComponent(ItemElement).UnSelectItem();
     }
