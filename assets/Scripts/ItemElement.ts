@@ -6,7 +6,7 @@ const { ccclass, property } = _decorator;
 @ccclass('ItemElement')
 export class ItemElement extends Component {
     isSelectItem: boolean;
-    @property(CCFloat) tweenDuration: number = 0.2;
+    @property(CCFloat) tweenDuration: number = 0.0;
     isSelected:boolean;
     public currentLayer:LayerItem;
 
@@ -14,6 +14,7 @@ export class ItemElement extends Component {
 
     @property(CCInteger)
     instanceId:Number;
+    posCurrent:Vec3;
 
     currentBox:BoxElement;
     layercurr:LayerItem ;
@@ -28,17 +29,16 @@ export class ItemElement extends Component {
     }
 
     CheckSelectedBox() {
-        const startPoint :Vec3 = new Vec3(this.node.getWorldPosition().x, this.node.getWorldPosition().y, this.node.getWorldPosition().z);
-        const target:Vec3 = new Vec3(startPoint.x, startPoint.y, startPoint.z - 5);
-        const outRay = geometry.Ray.create(this.node.getWorldPosition().x, this.node.getWorldPosition().y, this.node.getWorldPosition().z
-            , target.x, target.y, target.z );
+        let startPoint: Vec3 = new Vec3(this.node.worldPosition.x, this.node.worldPosition.y, this.node.worldPosition.z);
+        let target: Vec3 = new Vec3(this.node.worldPosition.x, this.node.worldPosition.y,this.node.worldPosition.z-5);
+        const outRay = new geometry.Ray();
+        geometry.Ray.fromPoints(outRay,startPoint,target);
         if (PhysicsSystem.instance.raycastClosest(outRay)) {
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
-            if (item.collider.node.getComponent(BoxCollider) != null  ) {
-                if(item.collider.node.getComponent(BoxElement)){
+            if (item.collider.node.getComponent(BoxCollider) != null) {
+                if (item.collider.node.getComponent(BoxElement)) {
                     item.collider.node.getComponent(BoxElement).AddItem(this);
-                    console.log(item.collider.node.getComponent(BoxCollider).name);
                 }
                 else{
                     this.MoveToPosOrigin();
@@ -52,6 +52,8 @@ export class ItemElement extends Component {
 
     public SelectItem() {
         this.isSelected = true;
+        this.posCurrent = this.node.getWorldPosition();
+
         this.node.setPosition(this.node.position.x, this.node.position.y, 2);
     }
     public UnSelectItem() {
@@ -65,20 +67,21 @@ export class ItemElement extends Component {
     }
     
     MoveToPosTarget(target: Node) {
-        tween(this.node.position).to(this.tweenDuration, new Vec3(target.children[0].position.x, target.children[0].position.y, 0),
+        console.log(new Vec3(target.children[0].worldPosition.x, target.children[0].worldPosition.y, 0));
+        tween(this.node.worldPosition).to(this.tweenDuration, new Vec3(target.children[0].worldPosition.x, target.children[0].worldPosition.y,+0.586),
             {
                 onUpdate: (target: Vec3, radius: number) => {
-                    this.node.position = target;
-                }
+                    this.node.worldPosition = target;
+                 
+                },
             }).start();
     }
     MoveToPosOrigin() {
-        tween(this.node.position).to(this.tweenDuration, Vec3.ZERO,
+        tween(this.node.worldPosition).to(this.tweenDuration, this.posCurrent,
             {
                 onUpdate: (target: Vec3, radius: number) => {
-                    this.node.position = target;
+                    this.node.worldPosition = target;
                 },
-              
             }).start();
     }
     MatchTween(){

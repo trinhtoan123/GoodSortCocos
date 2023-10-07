@@ -23,6 +23,8 @@ export class GameManager extends Component {
     @property(Label)
     TimeCountDownText: Label;
 
+    @property(Sprite)
+    btnDownLoad:Sprite;
    
 
     private constructor() {
@@ -43,6 +45,7 @@ export class GameManager extends Component {
         GameManager.instance = this;
         this.GameState = GAME_STATE.Play; 
         this.HomeUI.node.active = false;
+        // this.btnDownLoad.node.active = false;
 
 
     }

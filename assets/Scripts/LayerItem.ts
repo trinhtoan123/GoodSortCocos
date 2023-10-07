@@ -1,4 +1,4 @@
-import { _decorator, CCInteger, Component, Node, v3, Vec3 } from 'cc';
+import { _decorator, BoxCollider, CCInteger, Component, geometry, Node, PhysicsSystem, v3, Vec3 } from 'cc';
 import { ItemElement } from './ItemElement';
 import { BoxElement } from './BoxElement';
 const { ccclass, property } = _decorator;
@@ -13,6 +13,10 @@ export class LayerItem extends Component {
     box:BoxElement;
     start() {
 
+    }
+    protected update(dt: number): void {
+        
+      
     }
     InitLayer(box:BoxElement){
         this.box = box;
@@ -36,6 +40,7 @@ export class LayerItem extends Component {
         }
         if(index>=0 && index<this.lstItemPos.length){
             item.MoveToPosTarget(this.lstItemPos[index]);
+            item.node.setWorldPosition(Vec3.ZERO);
             this.lstItemContainer[index] = item;
             item.node.setParent(this.lstItemPos[index]);
             item.currentLayer = this;

@@ -35,10 +35,17 @@ export class TounchControler extends Component {
         if (PhysicsSystem.instance.raycastClosest(this._ray)) {
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
+            console.log()
             if (item.collider.node.getComponent(BoxCollider) != null && item.collider.node.getComponent(ItemElement) != null) {
                 this.isDraging = true;
                 this.target = item.collider.node;
                 this.target.getComponent(ItemElement).SelectItem();
+            }
+            if(item.collider.node.getComponent(BoxCollider) ==null){
+                console.log("Null boxCollider");
+            }
+            if(item.collider.node.getComponent(ItemElement) ==null){
+                console.log("Null ItemElement");
             }
         }
     }
@@ -47,23 +54,33 @@ export class TounchControler extends Component {
             return;
         if (!this.isDraging)
             return;
-        let touches = event.getTouches();
-        let touch1 = touches[0];
-        let delta1 = touch1.getDelta();
+        // let touches = event.getTouches();
+        // let touch1 = touches[0];
+        // let delta1 = touch1.getDelta();
 
-        this.offset.x = delta1.x / 40;
-        this.offset.y = delta1.y / 40;
-        let cam_pos = this.target.position.clone();
-        let newPos = new Vec3(
-            cam_pos.x + this.offset.x,
-            cam_pos.y + this.offset.y,
-            this.target.position.z
-        );
-        this.target.position = newPos;
+        // this.offset.x = delta1.x / 40;
+        // this.offset.y = delta1.y / 40;
+        // let cam_pos = this.target.position.clone();
+        // let newPos = new Vec3(
+        //     cam_pos.x + this.offset.x,
+        //     cam_pos.y + this.offset.y,
+        //     this.target.position.z
+        // );
+
+        // this.target.position = newPos;
+
+
+        var touch = event.touch!;
+        this._ray = new geometry.Ray();
+        let mousePos = new Vec3(touch.getLocationX(), touch.getLocationY(), 0);
+
+        let pos = new Vec3();
+        this.cma.screenToWorld(mousePos, pos);
+        this.target.worldPosition = new Vec3(pos.x, pos.y, 3);
     }
 
     onTouchEnd(event: EventTouch) {
-        if (this.target == null)
+        if (this.target == null||GameManager.getInstance().GameState != GAME_STATE.Play)
             return;
         this.isDraging = false;
         this.target.getComponent(ItemElement).UnSelectItem();
