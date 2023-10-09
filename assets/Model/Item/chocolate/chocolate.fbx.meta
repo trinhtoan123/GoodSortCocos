@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45",
+  "files": [],
+  "subMetas": {
+    "d8493": {
+      "importer": "gltf-mesh",
+      "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45@d8493",
+      "displayName": "",
+      "id": "d8493",
+      "name": "chocolate3.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "cb78d03e-cef2-44e6-837d-f292a21c8d45@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d702a": {
+      "importer": "gltf-material",
+      "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45@d702a",
+      "displayName": "",
+      "id": "d702a",
+      "name": "chocolate1_.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "06536": {
+      "importer": "gltf-scene",
+      "uuid": "cb78d03e-cef2-44e6-837d-f292a21c8d45@06536",
+      "displayName": "",
+      "id": "06536",
+      "name": "chocolate.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "cb78d03e-cef2-44e6-837d-f292a21c8d45@adacb"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "cb78d03e-cef2-44e6-837d-f292a21c8d45@06536",
+    "assetFinder": {
+      "meshes": [
+        "cb78d03e-cef2-44e6-837d-f292a21c8d45@d8493"
+      ],
+      "skeletons": [],
+      "textures": [
+        "cb78d03e-cef2-44e6-837d-f292a21c8d45@e873a"
+      ],
+      "materials": [
+        "cb78d03e-cef2-44e6-837d-f292a21c8d45@d702a"
+      ],
+      "scenes": [
+        "cb78d03e-cef2-44e6-837d-f292a21c8d45@06536"
+      ]
+    }
+  }
+}

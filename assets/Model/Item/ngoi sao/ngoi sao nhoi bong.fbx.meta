@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6",
+  "files": [],
+  "subMetas": {
+    "c7bc5": {
+      "importer": "gltf-mesh",
+      "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@c7bc5",
+      "displayName": "",
+      "id": "c7bc5",
+      "name": "ngoi_sao_nhoi_bong.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8c192": {
+      "importer": "gltf-embeded-image",
+      "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@8c192",
+      "displayName": "",
+      "id": "8c192",
+      "name": "file17.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "8cbf6": {
+      "importer": "texture",
+      "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@8cbf6",
+      "displayName": "",
+      "id": "8cbf6",
+      "name": "file17.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@8c192"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "00e3f": {
+      "importer": "gltf-material",
+      "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@00e3f",
+      "displayName": "",
+      "id": "00e3f",
+      "name": "ngoi_sao_nhoi_bong1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "71dd8": {
+      "importer": "gltf-scene",
+      "uuid": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@71dd8",
+      "displayName": "",
+      "id": "71dd8",
+      "name": "ngoi sao nhoi bong.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file17",
+        "uri": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@8c192"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@71dd8",
+    "assetFinder": {
+      "meshes": [
+        "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@c7bc5"
+      ],
+      "skeletons": [],
+      "textures": [
+        "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@8cbf6"
+      ],
+      "materials": [
+        "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@00e3f"
+      ],
+      "scenes": [
+        "452fae83-1d9e-4e40-bcf4-1386f33e9bb6@71dd8"
+      ]
+    }
+  }
+}

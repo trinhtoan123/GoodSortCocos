@@ -1,0 +1,297 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143",
+  "files": [],
+  "subMetas": {
+    "18761": {
+      "importer": "gltf-material",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@18761",
+      "displayName": "",
+      "id": "18761",
+      "name": "cream5.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fc105": {
+      "importer": "gltf-mesh",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@fc105",
+      "displayName": "",
+      "id": "fc105",
+      "name": "cream5_.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4de5e": {
+      "importer": "gltf-mesh",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@4de5e",
+      "displayName": "",
+      "id": "4de5e",
+      "name": "cream4_.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "823b0": {
+      "importer": "gltf-mesh",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@823b0",
+      "displayName": "",
+      "id": "823b0",
+      "name": "cream3_.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "20e9e": {
+      "importer": "gltf-mesh",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@20e9e",
+      "displayName": "",
+      "id": "20e9e",
+      "name": "cream1_.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f138f": {
+      "importer": "texture",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@f138f",
+      "displayName": "",
+      "id": "f138f",
+      "name": "file41.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream5_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "aa7d2": {
+      "importer": "texture",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@aa7d2",
+      "displayName": "",
+      "id": "aa7d2",
+      "name": "file40.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream4_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1db2b": {
+      "importer": "texture",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@1db2b",
+      "displayName": "",
+      "id": "1db2b",
+      "name": "file39.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream3_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "10d56": {
+      "importer": "texture",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@10d56",
+      "displayName": "",
+      "id": "10d56",
+      "name": "file38.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream1_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f1c9e": {
+      "importer": "gltf-material",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@f1c9e",
+      "displayName": "",
+      "id": "f1c9e",
+      "name": "cream4.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a4356": {
+      "importer": "gltf-material",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@a4356",
+      "displayName": "",
+      "id": "a4356",
+      "name": "cream3.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "dc61b": {
+      "importer": "gltf-material",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@dc61b",
+      "displayName": "",
+      "id": "dc61b",
+      "name": "cream1.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "be4f6": {
+      "importer": "gltf-scene",
+      "uuid": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@be4f6",
+      "displayName": "",
+      "id": "be4f6",
+      "name": "ice cream1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file41",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream5_Base_Color.png"
+      },
+      {
+        "name": "file40",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream4_Base_Color.png"
+      },
+      {
+        "name": "file39",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream3_Base_Color.png"
+      },
+      {
+        "name": "file38",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/A/cream1_Base_Color.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "9b32cb59-9b2e-44d1-9c4b-235dd4719143@be4f6",
+    "assetFinder": {
+      "meshes": [
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@fc105",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@4de5e",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@823b0",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@20e9e"
+      ],
+      "skeletons": [],
+      "textures": [
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@f138f",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@aa7d2",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@1db2b",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@10d56"
+      ],
+      "materials": [
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@18761",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@f1c9e",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@a4356",
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@dc61b"
+      ],
+      "scenes": [
+        "9b32cb59-9b2e-44d1-9c4b-235dd4719143@be4f6"
+      ]
+    }
+  }
+}

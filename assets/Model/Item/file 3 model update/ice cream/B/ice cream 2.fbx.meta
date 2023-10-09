@@ -1,0 +1,331 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "d502af67-a981-4df2-93e0-8889e8976508",
+  "files": [],
+  "subMetas": {
+    "b8554": {
+      "importer": "gltf-mesh",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@b8554",
+      "displayName": "",
+      "id": "b8554",
+      "name": "cream6_.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2bf9e": {
+      "importer": "gltf-mesh",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@2bf9e",
+      "displayName": "",
+      "id": "2bf9e",
+      "name": "cream7_.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d91b1": {
+      "importer": "gltf-mesh",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@d91b1",
+      "displayName": "",
+      "id": "d91b1",
+      "name": "cream8_.mesh",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "312f9": {
+      "importer": "gltf-mesh",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@312f9",
+      "displayName": "",
+      "id": "312f9",
+      "name": "cream9.mesh",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3d8a3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@3d8a3",
+      "displayName": "",
+      "id": "3d8a3",
+      "name": "file45.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "c21a4": {
+      "importer": "gltf-embeded-image",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@c21a4",
+      "displayName": "",
+      "id": "c21a4",
+      "name": "file43.image",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "7eaa5": {
+      "importer": "texture",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@7eaa5",
+      "displayName": "",
+      "id": "7eaa5",
+      "name": "file42.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/B/cream6_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e4459": {
+      "importer": "texture",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@e4459",
+      "displayName": "",
+      "id": "e4459",
+      "name": "file45.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d502af67-a981-4df2-93e0-8889e8976508@3d8a3"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e07c2": {
+      "importer": "texture",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@e07c2",
+      "displayName": "",
+      "id": "e07c2",
+      "name": "file43.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "d502af67-a981-4df2-93e0-8889e8976508@c21a4"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "23f9e": {
+      "importer": "texture",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@23f9e",
+      "displayName": "",
+      "id": "23f9e",
+      "name": "file44.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/file 3 model update/ice cream/B/ice_cream_9_Base_Color.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "fab52": {
+      "importer": "gltf-material",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@fab52",
+      "displayName": "",
+      "id": "fab52",
+      "name": "cream6.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d4cd5": {
+      "importer": "gltf-material",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@d4cd5",
+      "displayName": "",
+      "id": "d4cd5",
+      "name": "cream7.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9295f": {
+      "importer": "gltf-material",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@9295f",
+      "displayName": "",
+      "id": "9295f",
+      "name": "cream8.material",
+      "userData": {
+        "gltfIndex": 2
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e23e": {
+      "importer": "gltf-material",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@6e23e",
+      "displayName": "",
+      "id": "6e23e",
+      "name": "ice_cream_9.material",
+      "userData": {
+        "gltfIndex": 3
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3a78f": {
+      "importer": "gltf-scene",
+      "uuid": "d502af67-a981-4df2-93e0-8889e8976508@3a78f",
+      "displayName": "",
+      "id": "3a78f",
+      "name": "ice cream 2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file42",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/B/cream6_Base_Color.png"
+      },
+      {
+        "name": "file45",
+        "uri": "d502af67-a981-4df2-93e0-8889e8976508@3d8a3"
+      },
+      {
+        "name": "file43",
+        "uri": "d502af67-a981-4df2-93e0-8889e8976508@c21a4"
+      },
+      {
+        "name": "file44",
+        "uri": "db://assets/Model/Item/file 3 model update/ice cream/B/ice_cream_9_Base_Color.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "d502af67-a981-4df2-93e0-8889e8976508@3a78f",
+    "assetFinder": {
+      "meshes": [
+        "d502af67-a981-4df2-93e0-8889e8976508@b8554",
+        "d502af67-a981-4df2-93e0-8889e8976508@2bf9e",
+        "d502af67-a981-4df2-93e0-8889e8976508@d91b1",
+        "d502af67-a981-4df2-93e0-8889e8976508@312f9"
+      ],
+      "skeletons": [],
+      "textures": [
+        "d502af67-a981-4df2-93e0-8889e8976508@7eaa5",
+        "d502af67-a981-4df2-93e0-8889e8976508@e4459",
+        "d502af67-a981-4df2-93e0-8889e8976508@e07c2",
+        "d502af67-a981-4df2-93e0-8889e8976508@23f9e"
+      ],
+      "materials": [
+        "d502af67-a981-4df2-93e0-8889e8976508@fab52",
+        "d502af67-a981-4df2-93e0-8889e8976508@d4cd5",
+        "d502af67-a981-4df2-93e0-8889e8976508@9295f",
+        "d502af67-a981-4df2-93e0-8889e8976508@6e23e"
+      ],
+      "scenes": [
+        "d502af67-a981-4df2-93e0-8889e8976508@3a78f"
+      ]
+    }
+  }
+}

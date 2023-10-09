@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e",
+  "files": [],
+  "subMetas": {
+    "48272": {
+      "importer": "gltf-material",
+      "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e@48272",
+      "displayName": "",
+      "id": "48272",
+      "name": "SOUP2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "73d00": {
+      "importer": "gltf-mesh",
+      "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e@73d00",
+      "displayName": "",
+      "id": "73d00",
+      "name": "pCylinder3.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "9b723": {
+      "importer": "gltf-embeded-image",
+      "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e@9b723",
+      "displayName": "",
+      "id": "9b723",
+      "name": "file36.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "5db2e": {
+      "importer": "texture",
+      "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e@5db2e",
+      "displayName": "",
+      "id": "5db2e",
+      "name": "file36.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "51bd9622-6a04-4529-9006-8f46faa0bc0e@9b723"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "15b8d": {
+      "importer": "gltf-scene",
+      "uuid": "51bd9622-6a04-4529-9006-8f46faa0bc0e@15b8d",
+      "displayName": "",
+      "id": "15b8d",
+      "name": "hop mi tom.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file36",
+        "uri": "51bd9622-6a04-4529-9006-8f46faa0bc0e@9b723"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "51bd9622-6a04-4529-9006-8f46faa0bc0e@15b8d",
+    "assetFinder": {
+      "meshes": [
+        "51bd9622-6a04-4529-9006-8f46faa0bc0e@73d00"
+      ],
+      "skeletons": [],
+      "textures": [
+        "51bd9622-6a04-4529-9006-8f46faa0bc0e@5db2e"
+      ],
+      "materials": [
+        "51bd9622-6a04-4529-9006-8f46faa0bc0e@48272"
+      ],
+      "scenes": [
+        "51bd9622-6a04-4529-9006-8f46faa0bc0e@15b8d"
+      ]
+    }
+  }
+}

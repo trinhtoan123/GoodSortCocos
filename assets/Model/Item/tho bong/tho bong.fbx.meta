@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53",
+  "files": [],
+  "subMetas": {
+    "bca63": {
+      "importer": "gltf-mesh",
+      "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53@bca63",
+      "displayName": "",
+      "id": "bca63",
+      "name": "tho_bong.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b838c": {
+      "importer": "gltf-embeded-image",
+      "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53@b838c",
+      "displayName": "",
+      "id": "b838c",
+      "name": "file15.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d5851": {
+      "importer": "texture",
+      "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53@d5851",
+      "displayName": "",
+      "id": "d5851",
+      "name": "file15.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "de194aba-e19c-4a28-a03f-b9b28915fb53@b838c"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2d945": {
+      "importer": "gltf-material",
+      "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53@2d945",
+      "displayName": "",
+      "id": "2d945",
+      "name": "tho_bong1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "7a0d5": {
+      "importer": "gltf-scene",
+      "uuid": "de194aba-e19c-4a28-a03f-b9b28915fb53@7a0d5",
+      "displayName": "",
+      "id": "7a0d5",
+      "name": "tho bong.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file15",
+        "uri": "de194aba-e19c-4a28-a03f-b9b28915fb53@b838c"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "de194aba-e19c-4a28-a03f-b9b28915fb53@7a0d5",
+    "assetFinder": {
+      "meshes": [
+        "de194aba-e19c-4a28-a03f-b9b28915fb53@bca63"
+      ],
+      "skeletons": [],
+      "textures": [
+        "de194aba-e19c-4a28-a03f-b9b28915fb53@d5851"
+      ],
+      "materials": [
+        "de194aba-e19c-4a28-a03f-b9b28915fb53@2d945"
+      ],
+      "scenes": [
+        "de194aba-e19c-4a28-a03f-b9b28915fb53@7a0d5"
+      ]
+    }
+  }
+}

@@ -13,13 +13,15 @@ export class TounchControler extends Component {
     private _ray: geometry.Ray;
     private offset: Vec3 = new Vec3();
     isDraging: boolean = false;
+
+
+    
     onLoad() {
         // Register a touch or mouse event listener
         input.on(Input.EventType.TOUCH_START, this.onTouchStart, this);
         input.on(Input.EventType.TOUCH_MOVE, this.onTouchMove, this);
         input.on(Input.EventType.TOUCH_END, this.onTouchEnd, this);
 
-        // You can also use 'MOUSE_DOWN' event for mouse input
     }
 
     onDestroy() {
@@ -35,17 +37,10 @@ export class TounchControler extends Component {
         if (PhysicsSystem.instance.raycastClosest(this._ray)) {
             var raycastResult = PhysicsSystem.instance.raycastClosestResult;
             let item = raycastResult;
-            console.log()
             if (item.collider.node.getComponent(BoxCollider) != null && item.collider.node.getComponent(ItemElement) != null) {
                 this.isDraging = true;
                 this.target = item.collider.node;
                 this.target.getComponent(ItemElement).SelectItem();
-            }
-            if(item.collider.node.getComponent(BoxCollider) ==null){
-                console.log("Null boxCollider");
-            }
-            if(item.collider.node.getComponent(ItemElement) ==null){
-                console.log("Null ItemElement");
             }
         }
     }
@@ -54,22 +49,6 @@ export class TounchControler extends Component {
             return;
         if (!this.isDraging)
             return;
-        // let touches = event.getTouches();
-        // let touch1 = touches[0];
-        // let delta1 = touch1.getDelta();
-
-        // this.offset.x = delta1.x / 40;
-        // this.offset.y = delta1.y / 40;
-        // let cam_pos = this.target.position.clone();
-        // let newPos = new Vec3(
-        //     cam_pos.x + this.offset.x,
-        //     cam_pos.y + this.offset.y,
-        //     this.target.position.z
-        // );
-
-        // this.target.position = newPos;
-
-
         var touch = event.touch!;
         this._ray = new geometry.Ray();
         let mousePos = new Vec3(touch.getLocationX(), touch.getLocationY(), 0);

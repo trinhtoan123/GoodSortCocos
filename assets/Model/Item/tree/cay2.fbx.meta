@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e",
+  "files": [],
+  "subMetas": {
+    "a7097": {
+      "importer": "gltf-mesh",
+      "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e@a7097",
+      "displayName": "",
+      "id": "a7097",
+      "name": "cay2_.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c2b8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e@0c2b8",
+      "displayName": "",
+      "id": "0c2b8",
+      "name": "file32.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "fe32e": {
+      "importer": "texture",
+      "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e@fe32e",
+      "displayName": "",
+      "id": "fe32e",
+      "name": "file32.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "6e5c1030-890f-401e-a11e-c0648f6ba18e@0c2b8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1788f": {
+      "importer": "gltf-material",
+      "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e@1788f",
+      "displayName": "",
+      "id": "1788f",
+      "name": "cay2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "3d7ba": {
+      "importer": "gltf-scene",
+      "uuid": "6e5c1030-890f-401e-a11e-c0648f6ba18e@3d7ba",
+      "displayName": "",
+      "id": "3d7ba",
+      "name": "cay2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file32",
+        "uri": "6e5c1030-890f-401e-a11e-c0648f6ba18e@0c2b8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "6e5c1030-890f-401e-a11e-c0648f6ba18e@3d7ba",
+    "assetFinder": {
+      "meshes": [
+        "6e5c1030-890f-401e-a11e-c0648f6ba18e@a7097"
+      ],
+      "skeletons": [],
+      "textures": [
+        "6e5c1030-890f-401e-a11e-c0648f6ba18e@fe32e"
+      ],
+      "materials": [
+        "6e5c1030-890f-401e-a11e-c0648f6ba18e@1788f"
+      ],
+      "scenes": [
+        "6e5c1030-890f-401e-a11e-c0648f6ba18e@3d7ba"
+      ]
+    }
+  }
+}

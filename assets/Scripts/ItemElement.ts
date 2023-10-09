@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider, CCFloat, CCInteger, Component, director, geometry, math, Node, PhysicsRayResult, PhysicsSystem, tween, v3, Vec3 } from 'cc';
+import { _decorator, BoxCollider, CCFloat, CCInteger, Component, director, geometry, Material, math, MeshRenderer, Node, PhysicsRayResult, PhysicsSystem, tween, v3, Vec3 } from 'cc';
 import { BoxElement } from './BoxElement';
 import { LayerItem } from './LayerItem';
 const { ccclass, property } = _decorator;
@@ -17,15 +17,30 @@ export class ItemElement extends Component {
     posCurrent:Vec3;
 
     currentBox:BoxElement;
+    boxNext:BoxElement;
     layercurr:LayerItem ;
     boxTarget:BoxElement;
     
-    protected start(): void {
-    }
+    boxOld:BoxElement;
+
+    layerOld:LayerItem;
+    
+    @property(Material)
+    materialOn:Material;
+
+    @property(Material)
+    materialOff:Material;
+
+    @property(Node)
+    Model:Node;
+
+
 
     InitItem(layer:LayerItem,box:BoxElement){
         this.layercurr = layer;
         this.currentBox = box;
+
+       
     }
 
     CheckSelectedBox() {
@@ -53,26 +68,30 @@ export class ItemElement extends Component {
     public SelectItem() {
         this.isSelected = true;
         this.posCurrent = this.node.getWorldPosition();
-
         this.node.setPosition(this.node.position.x, this.node.position.y, 2);
     }
     public UnSelectItem() {
         this.isSelectItem = false;
         this.CheckSelectedBox();
     }
-    UpdateCurrentBox(box: BoxElement )
+    UpdateCurrentBox(box: BoxElement,layer:LayerItem )
     {
+        this.boxOld = this.currentBox;
+        this.layerOld= this.layercurr
         this.currentBox.RemoveItem(this);
-        this.currentBox = box;
+        this.InitItem(layer,box)
     }
     
     MoveToPosTarget(target: Node) {
-        console.log(new Vec3(target.children[0].worldPosition.x, target.children[0].worldPosition.y, 0));
         tween(this.node.worldPosition).to(this.tweenDuration, new Vec3(target.children[0].worldPosition.x, target.children[0].worldPosition.y,+0.586),
             {
                 onUpdate: (target: Vec3, radius: number) => {
                     this.node.worldPosition = target;
                  
+                },
+                onComplete:() =>{
+                    this.node.position = Vec3.ZERO;
+                    this.boxOld.CheckLayer(this.layerOld);
                 },
             }).start();
     }
@@ -81,6 +100,9 @@ export class ItemElement extends Component {
             {
                 onUpdate: (target: Vec3, radius: number) => {
                     this.node.worldPosition = target;
+                },
+                onComplete:() =>{
+                    this.node.position = Vec3.ZERO;
                 },
             }).start();
     }
@@ -93,6 +115,14 @@ export class ItemElement extends Component {
                 }
             }).start();
     }
+    SetMaterialOn(){
+        this.Model.getComponent(MeshRenderer).material = this.materialOn;
+    }
+    SetMaterialOff(){
+        this.Model.getComponent(MeshRenderer).material = this.materialOff;
+    }
+    
 }
+
 
 

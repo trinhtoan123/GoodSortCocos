@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7767b737-8d18-4241-a563-c313b75b59cf",
+  "files": [],
+  "subMetas": {
+    "c73c7": {
+      "importer": "gltf-mesh",
+      "uuid": "7767b737-8d18-4241-a563-c313b75b59cf@c73c7",
+      "displayName": "",
+      "id": "c73c7",
+      "name": "sua_chua1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "39d6e": {
+      "importer": "gltf-embeded-image",
+      "uuid": "7767b737-8d18-4241-a563-c313b75b59cf@39d6e",
+      "displayName": "",
+      "id": "39d6e",
+      "name": "file5.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "583b7": {
+      "importer": "texture",
+      "uuid": "7767b737-8d18-4241-a563-c313b75b59cf@583b7",
+      "displayName": "",
+      "id": "583b7",
+      "name": "file5.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "7767b737-8d18-4241-a563-c313b75b59cf@39d6e"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a5fe0": {
+      "importer": "gltf-material",
+      "uuid": "7767b737-8d18-4241-a563-c313b75b59cf@a5fe0",
+      "displayName": "",
+      "id": "a5fe0",
+      "name": "sua_chua.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b1e44": {
+      "importer": "gltf-scene",
+      "uuid": "7767b737-8d18-4241-a563-c313b75b59cf@b1e44",
+      "displayName": "",
+      "id": "b1e44",
+      "name": "sua chua.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file5",
+        "uri": "7767b737-8d18-4241-a563-c313b75b59cf@39d6e"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "7767b737-8d18-4241-a563-c313b75b59cf@b1e44",
+    "assetFinder": {
+      "meshes": [
+        "7767b737-8d18-4241-a563-c313b75b59cf@c73c7"
+      ],
+      "skeletons": [],
+      "textures": [
+        "7767b737-8d18-4241-a563-c313b75b59cf@583b7"
+      ],
+      "materials": [
+        "7767b737-8d18-4241-a563-c313b75b59cf@a5fe0"
+      ],
+      "scenes": [
+        "7767b737-8d18-4241-a563-c313b75b59cf@b1e44"
+      ]
+    }
+  }
+}

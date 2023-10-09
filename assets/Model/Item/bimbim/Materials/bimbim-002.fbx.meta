@@ -1,0 +1,244 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b",
+  "files": [],
+  "subMetas": {
+    "22480": {
+      "importer": "gltf-scene",
+      "uuid": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@22480",
+      "displayName": "",
+      "id": "22480",
+      "name": "bimbim-002.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "36684": {
+      "importer": "gltf-mesh",
+      "uuid": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@36684",
+      "displayName": "",
+      "id": "36684",
+      "name": "pCube8.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "61002": {
+      "importer": "gltf-material",
+      "uuid": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@61002",
+      "displayName": "",
+      "id": "61002",
+      "name": "bimbim6.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e4459": {
+      "importer": "texture",
+      "uuid": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@e4459",
+      "displayName": "",
+      "id": "e4459",
+      "name": "file45.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/Item/bimbim/BIM6.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file45",
+        "uri": "db://assets/Model/Item/bimbim/BIM6.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@22480",
+    "assetFinder": {
+      "meshes": [
+        "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@36684"
+      ],
+      "skeletons": [],
+      "textures": [
+        "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@e4459"
+      ],
+      "materials": [
+        "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@61002"
+      ],
+      "scenes": [
+        "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@22480"
+      ]
+    },
+    "materials": {
+      "9db53bcf-0b6c-46ac-a00c-e8534f613e29@61002": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "e079f0cc-4092-481c-8434-f5089db9ce31@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790938168236,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 188,
+              "g": 188,
+              "b": 188,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      "a22b5b0c-2064-43c8-b4c6-0976561eeb9b@61002": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "2ac410bc-f257-44c8-a896-9a8e4dc8b12b@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790938168236,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 188,
+              "g": 188,
+              "b": 188,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

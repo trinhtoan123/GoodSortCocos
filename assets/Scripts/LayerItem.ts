@@ -1,4 +1,4 @@
-import { _decorator, BoxCollider, CCInteger, Component, geometry, Node, PhysicsSystem, v3, Vec3 } from 'cc';
+import { _decorator, BoxCollider, CCInteger, Component, geometry, InstancedBuffer, Node, PhysicsSystem, v3, Vec3 } from 'cc';
 import { ItemElement } from './ItemElement';
 import { BoxElement } from './BoxElement';
 const { ccclass, property } = _decorator;
@@ -6,99 +6,112 @@ const { ccclass, property } = _decorator;
 @ccclass('LayerItem')
 export class LayerItem extends Component {
 
-    @property([Node])lstItemPos:Node[];
-    @property({visible: true, type:ItemElement})
-    lstItemContainer:ItemElement[]=[];
-    
-    box:BoxElement;
-    start() {
+    @property([Node]) lstItemPos: Node[];
+    @property({ visible: true, type: ItemElement })
+    lstItemContainer: ItemElement[] = [];
 
-    }
-    protected update(dt: number): void {
-        
-      
-    }
-    InitLayer(box:BoxElement){
+    box: BoxElement;
+
+    @property(Boolean)
+    layerNull: Boolean;
+
+    InitLayer(box: BoxElement) {
         this.box = box;
         for (let i = 0; i < this.lstItemContainer.length; i++) {
-            if  ( this.lstItemContainer[i]!=null ) {
-                this.lstItemContainer[i].InitItem(this,box);
+            if (this.lstItemContainer[i] != null) {
+                this.lstItemContainer[i].InitItem(this, box);
             }
         }
     }
-    public addItem(item:ItemElement ){
+    public addItem(item: ItemElement) {
         let index = -1;
         let neardistance = Infinity;
         for (let i = 0; i < this.lstItemContainer.length; i++) {
-            if (this.lstItemContainer[i]==null){
-                let distance = Vec3.distance(item.node.getWorldPosition(),this.lstItemPos[i].getWorldPosition());
-                if(distance<neardistance){
+            if (this.lstItemContainer[i] == null) {
+                let distance = Vec3.distance(item.node.getWorldPosition(), this.lstItemPos[i].getWorldPosition());
+                if (distance < neardistance) {
                     neardistance = distance;
                     index = i;
                 }
             }
         }
-        if(index>=0 && index<this.lstItemPos.length){
+        if (index >= 0 && index < this.lstItemPos.length) {
             item.MoveToPosTarget(this.lstItemPos[index]);
-            item.node.setWorldPosition(Vec3.ZERO);
             this.lstItemContainer[index] = item;
             item.node.setParent(this.lstItemPos[index]);
             item.currentLayer = this;
+
+
         }
-       this.CheckMatchInLayer();
+        this.CheckMatchInLayer();
     }
 
-    CheckMatchInLayer(){
-        if(this.CheckMatch()){
+    CheckMatchInLayer() {
+        if (this.CheckMatch()) {
             this.MatchListItem();
         }
     }
-    CheckMatch():boolean{
+    CheckMatch(): boolean {
 
-        let id : Number = -1;
-        for (let i = 0; i <this.lstItemContainer.length;i++){
-            if (this.lstItemContainer[i]!=null){
-                if (id !=-1){
-                    if (id!=this.lstItemContainer[i].id)return false;
+        let id: Number = -1;
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
+            if (this.lstItemContainer[i] != null) {
+                if (id != -1) {
+                    if (id != this.lstItemContainer[i].id) return false;
                 }
-                else{
-                    id =this.lstItemContainer[i].id;
+                else {
+                    id = this.lstItemContainer[i].id;
                 }
             }
-            else{
+            else {
                 return false;
             }
         }
         return true;
     }
-    MatchListItem(){
-        for (let i = 0; i < this.lstItemContainer.length;i++){
+    MatchListItem() {
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
             this.lstItemContainer[i].MatchTween();
             this.lstItemContainer[i] = null;
         }
+        this.box.UpdateLayer();
+        this.box.CheckWin();
     }
 
-    IsLayerContainEmpty():boolean
-    {
+    IsLayerContainEmpty(): boolean {
         for (let i = 0; i < this.lstItemContainer.length; i++) {
-            if(this.lstItemContainer[i]==null){
+            if (this.lstItemContainer[i] == null) {
                 return true;
-            } 
+            }
         }
         return false;
     }
-     IsLayerEmpty(){
-        for (let i = 0; i < this.lstItemContainer.length;i++){
-            if(this.lstItemContainer[i]!=null)return false;
+    IsLayerEmpty() {
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
+            if (this.lstItemContainer[i] != null) return false;
         }
         return true;
     }
-    RemoveItem(item:ItemElement ){
-        for (let i = 0; i < this.lstItemContainer.length;i++)
-        {
-            if (this.lstItemContainer[i] != null && item.instanceId == this.lstItemContainer[i].instanceId)
-            {
+    RemoveItem(item: ItemElement) {
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
+            if (this.lstItemContainer[i] != null && item.instanceId == this.lstItemContainer[i].instanceId) {
                 this.lstItemContainer[i] = null;
+            }
+        }
+
+    }
+    SetMaterialOn() {
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
+            if (this.lstItemContainer[i] != null) {
+                this.lstItemContainer[i].SetMaterialOn();
+
+            }
+        }
+    }
+    SetMaterialOff() {
+        for (let i = 0; i < this.lstItemContainer.length; i++) {
+            if (this.lstItemContainer[i] != null) {
+                this.lstItemContainer[i].SetMaterialOff();
             }
         }
     }
