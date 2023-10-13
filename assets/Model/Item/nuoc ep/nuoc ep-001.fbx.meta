@@ -1,0 +1,348 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0",
+  "files": [],
+  "subMetas": {
+    "8c3a2": {
+      "importer": "gltf-mesh",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@8c3a2",
+      "displayName": "",
+      "id": "8c3a2",
+      "name": "polySurface3.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ff420": {
+      "importer": "gltf-mesh",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@ff420",
+      "displayName": "",
+      "id": "ff420",
+      "name": "polySurface7.mesh",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "adacb": {
+      "importer": "gltf-embeded-image",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@adacb",
+      "displayName": "",
+      "id": "adacb",
+      "name": "file2.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "e873a": {
+      "importer": "texture",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@e873a",
+      "displayName": "",
+      "id": "e873a",
+      "name": "file2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "abfb0150-9434-40ef-9b9b-ed636836a7c0@adacb"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "abfb0150-9434-40ef-9b9b-ed636836a7c0@43c71"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "32ee5": {
+      "importer": "gltf-material",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@32ee5",
+      "displayName": "",
+      "id": "32ee5",
+      "name": "nuoc_ep_tao_2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0912b": {
+      "importer": "gltf-material",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@0912b",
+      "displayName": "",
+      "id": "0912b",
+      "name": "nuoc_ep.material",
+      "userData": {
+        "gltfIndex": 1
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a5646": {
+      "importer": "gltf-scene",
+      "uuid": "abfb0150-9434-40ef-9b9b-ed636836a7c0@a5646",
+      "displayName": "",
+      "id": "a5646",
+      "name": "nuoc ep-001.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file2",
+        "uri": "abfb0150-9434-40ef-9b9b-ed636836a7c0@adacb"
+      },
+      {
+        "name": "file1",
+        "uri": "abfb0150-9434-40ef-9b9b-ed636836a7c0@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "abfb0150-9434-40ef-9b9b-ed636836a7c0@a5646",
+    "assetFinder": {
+      "meshes": [
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@8c3a2",
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@ff420"
+      ],
+      "skeletons": [],
+      "textures": [
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@e873a",
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@d20e9"
+      ],
+      "materials": [
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@32ee5",
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@0912b"
+      ],
+      "scenes": [
+        "abfb0150-9434-40ef-9b9b-ed636836a7c0@a5646"
+      ]
+    },
+    "materials": {
+      "abfb0150-9434-40ef-9b9b-ed636836a7c0@32ee5": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "990fb33f-ff72-44ff-a7fd-bcf3b0a062cb@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790943145752,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 85,
+              "g": 85,
+              "b": 85,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      },
+      "abfb0150-9434-40ef-9b9b-ed636836a7c0@0912b": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 1,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "207e2318-686a-48b0-85e9-07b66f66b483@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "mainColor": {
+              "__type__": "cc.Color",
+              "r": 255,
+              "g": 255,
+              "b": 255,
+              "a": 105
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790943145752,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 188,
+              "g": 188,
+              "b": 188,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211",
+  "files": [],
+  "subMetas": {
+    "661f9": {
+      "importer": "gltf-mesh",
+      "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211@661f9",
+      "displayName": "",
+      "id": "661f9",
+      "name": "hop_mi_tom1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0c2b8": {
+      "importer": "gltf-embeded-image",
+      "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211@0c2b8",
+      "displayName": "",
+      "id": "0c2b8",
+      "name": "file32.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "fe32e": {
+      "importer": "texture",
+      "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211@fe32e",
+      "displayName": "",
+      "id": "fe32e",
+      "name": "file32.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "02c5bbe0-2280-453c-ac93-ad04d9191211@0c2b8"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ba258": {
+      "importer": "gltf-material",
+      "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211@ba258",
+      "displayName": "",
+      "id": "ba258",
+      "name": "hop_mi_tom.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "15b8d": {
+      "importer": "gltf-scene",
+      "uuid": "02c5bbe0-2280-453c-ac93-ad04d9191211@15b8d",
+      "displayName": "",
+      "id": "15b8d",
+      "name": "hop mi tom-001.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file32",
+        "uri": "02c5bbe0-2280-453c-ac93-ad04d9191211@0c2b8"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "02c5bbe0-2280-453c-ac93-ad04d9191211@15b8d",
+    "assetFinder": {
+      "meshes": [
+        "02c5bbe0-2280-453c-ac93-ad04d9191211@661f9"
+      ],
+      "skeletons": [],
+      "textures": [
+        "02c5bbe0-2280-453c-ac93-ad04d9191211@fe32e"
+      ],
+      "materials": [
+        "02c5bbe0-2280-453c-ac93-ad04d9191211@ba258"
+      ],
+      "scenes": [
+        "02c5bbe0-2280-453c-ac93-ad04d9191211@15b8d"
+      ]
+    },
+    "materials": {
+      "02c5bbe0-2280-453c-ac93-ad04d9191211@ba258": {
+        "__type__": "cc.Material",
+        "_name": "",
+        "_objFlags": 0,
+        "_native": "",
+        "_effectAsset": {
+          "__uuid__": "f648964e-8d32-41fc-9ac9-7a1e714dd17b",
+          "__expectedType__": "cc.EffectAsset"
+        },
+        "_techIdx": 0,
+        "_defines": [
+          {
+            "DCC_APP_NAME": 5,
+            "USE_ALBEDO_MAP": true
+          },
+          {},
+          {}
+        ],
+        "_states": [
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          },
+          {
+            "rasterizerState": {},
+            "depthStencilState": {},
+            "blendState": {
+              "targets": [
+                {}
+              ]
+            }
+          }
+        ],
+        "_props": [
+          {
+            "mainTexture": {
+              "__uuid__": "9bb9833a-1970-44a2-a33e-90590eb7a497@6c48a",
+              "__expectedType__": "cc.Texture2D"
+            },
+            "albedoScale": 0.800000011920929,
+            "shininessExponent": 6.311790938168236,
+            "specularColor": {
+              "__type__": "cc.Color",
+              "r": 188,
+              "g": 188,
+              "b": 188,
+              "a": 255
+            }
+          },
+          {},
+          {}
+        ]
+      }
+    }
+  }
+}
