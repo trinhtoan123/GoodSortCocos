@@ -11,6 +11,7 @@ export class LevelUnit extends Component {
 
     check: boolean = false;
 
+
     @property([ItemElement])
     listItem: ItemElement[];
 
@@ -28,9 +29,6 @@ export class LevelUnit extends Component {
     
     StartLevel(){
         this.GetInstanceId();
-        for (let i = 0; i < this.lstBox.length; i++) {
-            this.lstBox[i].startGame();
-        }
     }
     protected update(dt: number): void {
         this.CheckWin();
@@ -38,8 +36,9 @@ export class LevelUnit extends Component {
 
     GetInstanceId() {
         for (let i = 0; i < this.listItem.length; i++) {
-            this.listItem[i].instanceId = i;
+            this.listItem[i].instanceId = i+100;
         }
+
 
     }
     CheckWin() {
@@ -56,6 +55,10 @@ export class LevelUnit extends Component {
         }
 
     }
+     Tutorial(){
+
+    }
+
 
 }
 

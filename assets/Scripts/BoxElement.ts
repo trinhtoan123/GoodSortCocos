@@ -20,14 +20,16 @@ export class BoxElement extends Component {
 
 
 
-    startGame() {
-
+    protected start(): void {
         this.layerFirst.InitLayer(this);
         this.layerSecond.InitLayer(this);
         this.layerSecond.SetMaterialOff();
         this.layerFirst.SetMaterialOn();
-
         this.Init(this.layerFirst);
+    }
+    startGame() {
+
+
 
 
 
@@ -56,7 +58,6 @@ export class BoxElement extends Component {
     CheckLayer(layer: LayerItem) {
         for (var i = 0; i < layer.lstItemContainer.length; i++) {
             if (layer.lstItemContainer[i] != null) {
-                console.log(layer.lstItemContainer[i].name);
                 return;
             }
         }

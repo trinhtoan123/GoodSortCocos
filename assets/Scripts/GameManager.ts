@@ -1,4 +1,4 @@
-import { _decorator, Component, director, instantiate, Label, Node, Sprite } from 'cc';
+import { _decorator, Component, director, instantiate, Label, Node, Sprite, tween, Vec3 } from 'cc';
 import { LevelUnit } from './LevelUnit';
 const { ccclass, property } = _decorator;
 export enum GAME_STATE {
@@ -29,15 +29,14 @@ export class GameManager extends Component {
     @property(Sprite)
     btnDownLoad:Sprite;
 
-    @property(Sprite)
-    btnReplay:Sprite;
-
     @property(Node)
     level:Node;
 
     @property(Node)
     levelCurr:Node;
 
+    @property(Sprite)
+    handTutorial:Sprite;
 
     private constructor() {
         super();
@@ -53,7 +52,6 @@ export class GameManager extends Component {
         this.GameState = GAME_STATE.Init; 
         this.winNode.node.active = false;
         this.loseNode.node.active = false;
-        this.btnReplay.node.active = false;
         this.SpawnLevel();
     }
     StartGame() {
@@ -61,16 +59,10 @@ export class GameManager extends Component {
         GameManager.instance = this;
         this.GameState = GAME_STATE.Play; 
         this.HomeUI.node.active = false;
-        this.TimePlay = 15;
+        this.TimePlay = 1500;
         this.level.getComponent(LevelUnit).StartLevel();
     }
     SpawnLevel(){
-        // if(this.levelCurr!=null){
-        //     this.levelCurr.destroy();
-        // }
-        // let node = instantiate(this.level);
-        // node.setPosition(0.5, 0,0);
-        // this.levelCurr = node;
     }
     update(deltaTime: number) {
         if (this.GameState != GAME_STATE.Play)
@@ -89,26 +81,29 @@ export class GameManager extends Component {
 
     Lose(){
         this.loseNode.node.active = true;
-        // this.btnReplay.node.active = true;
         this.GameState = GAME_STATE.Over;
         console.log("[GameEnd_Lose]");
     }
     Win(){
         this.winNode.node.active = true;
         this.GameState = GAME_STATE.Over;
-        // this.btnReplay.node.active = true;
         console.log("[GameEnd_Win]");
     }
-    // BtnReaplay(){
-    //     this.winNode.node.active = false;
-    //     this.loseNode.node.active = false;
-    //     this.btnReplay.node.active = false;
-    //     this.StartGame();
-    // }
+    Tutorial(){
+         tween(this.handTutorial.node.position).to(0.5, new Vec3(4.5,0,2),
+            {
+                // onUpdate: (target: Vec3, radius: number) => {
+                //     this.layerTarget.node.position = target;
+                // },
+            }).start();
+
+    }
 
     DownLoadGame(){
         console.log('[CTA]');
     }
+
+
    
   
 }

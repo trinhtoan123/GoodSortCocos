@@ -12,7 +12,6 @@ export class ItemElement extends Component {
 
     @property(CCInteger)id:Number;
 
-    @property(CCInteger)
     instanceId:Number;
     posCurrent:Vec3;
 
@@ -116,10 +115,26 @@ export class ItemElement extends Component {
             }).start();
     }
     SetMaterialOn(){
-        this.Model.getComponent(MeshRenderer).material = this.materialOn;
+        if(this.Model!=null){
+            this.node.scale = new Vec3(0.2,0.2,0.2);
+            tween(this.node).to(0.2, 
+                {scale:new Vec3(1,1,1),}, 
+                {
+                }).start();
+            this.Model.getComponent(MeshRenderer).material = this.materialOn;
+        }
+        else{
+            console.log("Model null On"+ this.id + this.currentBox.node.name);
+        }
     }
     SetMaterialOff(){
-        this.Model.getComponent(MeshRenderer).material = this.materialOff;
+        if(this.Model!=null){
+            this.Model.getComponent(MeshRenderer).material = this.materialOff;
+
+        }
+        else{
+            console.log("Model null OFF");
+        }
     }
     
 }
