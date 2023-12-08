@@ -13,11 +13,22 @@ export class BoxElement extends Component {
     @property(LayerItem)
     layerSecond: LayerItem;
 
+    @property(Node)
+    modelBox:Node
+
     @property(LayerItem)
     layerTarget: LayerItem;
 
     isCheclayer: boolean = true;
 
+    @property(Node)
+    posParent:Node;
+
+    @property(Node)
+    boxChild:Node; 
+    
+    @property(Node)
+    boxParent:Node;  
 
 
     protected start(): void {
@@ -28,10 +39,6 @@ export class BoxElement extends Component {
         this.Init(this.layerFirst);
     }
     startGame() {
-
-
-
-
 
     }
     Init(layer: LayerItem) {
@@ -83,6 +90,37 @@ export class BoxElement extends Component {
             return true;
 
         }
+    }
+    DropBox(){
+        if(this.boxChild==null){
+            this.node.active = false;
+        }
+        else{
+            this.modelBox.active = false;
+            tween(this.boxChild.position).to(0.3,Vec3.ZERO,
+                {
+                    easing:  "elasticOut",
+
+                    onUpdate: (target: Vec3, radius: number) => {
+                        this.boxChild.position = target;
+                    },
+                    onComplete:() =>{
+                        this.boxChild.setParent(this.posParent);
+                        this.boxChild.position = Vec3.ZERO;
+                        this.node.active = false;
+                        if(this.boxChild!=null){
+                            this.boxChild.getComponent(BoxElement).posParent = this.posParent;
+                            this.boxChild.getComponent(BoxElement).boxParent=this.boxParent;
+
+                        }
+                        if(this.boxParent!=null){
+                            this.boxParent.getComponent(BoxElement).boxChild=this.boxChild;
+                        }
+                    },
+                }).start();
+
+        }
+       
     }
 
 }

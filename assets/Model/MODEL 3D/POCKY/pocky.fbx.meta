@@ -1,0 +1,78 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79",
+  "files": [],
+  "subMetas": {
+    "2ec19": {
+      "importer": "gltf-mesh",
+      "uuid": "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@2ec19",
+      "displayName": "",
+      "id": "2ec19",
+      "name": "pocky.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6a07f": {
+      "importer": "gltf-material",
+      "uuid": "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@6a07f",
+      "displayName": "",
+      "id": "6a07f",
+      "name": "pocky1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5b76c": {
+      "importer": "gltf-scene",
+      "uuid": "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@5b76c",
+      "displayName": "",
+      "id": "5b76c",
+      "name": "pocky.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@5b76c",
+    "assetFinder": {
+      "meshes": [
+        "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@2ec19"
+      ],
+      "skeletons": [],
+      "textures": [],
+      "materials": [
+        "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@6a07f"
+      ],
+      "scenes": [
+        "7476f4a3-e36f-47a1-bd6d-5f231c8f0b79@5b76c"
+      ]
+    }
+  }
+}

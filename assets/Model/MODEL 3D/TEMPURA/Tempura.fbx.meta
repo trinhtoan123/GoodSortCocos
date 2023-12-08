@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9",
+  "files": [],
+  "subMetas": {
+    "37746": {
+      "importer": "gltf-mesh",
+      "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9@37746",
+      "displayName": "",
+      "id": "37746",
+      "name": "Tempura2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43833": {
+      "importer": "gltf-embeded-image",
+      "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9@43833",
+      "displayName": "",
+      "id": "43833",
+      "name": "Tempura1F.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "6955c": {
+      "importer": "texture",
+      "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9@6955c",
+      "displayName": "",
+      "id": "6955c",
+      "name": "Tempura1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "93de5a42-da00-41dc-911f-e7430804a4e9@43833"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d7aed": {
+      "importer": "gltf-material",
+      "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9@d7aed",
+      "displayName": "",
+      "id": "d7aed",
+      "name": "Tempura1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "206ac": {
+      "importer": "gltf-scene",
+      "uuid": "93de5a42-da00-41dc-911f-e7430804a4e9@206ac",
+      "displayName": "",
+      "id": "206ac",
+      "name": "Tempura.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Tempura1F",
+        "uri": "93de5a42-da00-41dc-911f-e7430804a4e9@43833"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "93de5a42-da00-41dc-911f-e7430804a4e9@206ac",
+    "assetFinder": {
+      "meshes": [
+        "93de5a42-da00-41dc-911f-e7430804a4e9@37746"
+      ],
+      "skeletons": [],
+      "textures": [
+        "93de5a42-da00-41dc-911f-e7430804a4e9@6955c"
+      ],
+      "materials": [
+        "93de5a42-da00-41dc-911f-e7430804a4e9@d7aed"
+      ],
+      "scenes": [
+        "93de5a42-da00-41dc-911f-e7430804a4e9@206ac"
+      ]
+    }
+  }
+}

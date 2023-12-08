@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "717e1575-140f-4343-847d-9051af68c426",
+  "files": [],
+  "subMetas": {
+    "1d30c": {
+      "importer": "gltf-mesh",
+      "uuid": "717e1575-140f-4343-847d-9051af68c426@1d30c",
+      "displayName": "",
+      "id": "1d30c",
+      "name": "Gyoza2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b838c": {
+      "importer": "gltf-embeded-image",
+      "uuid": "717e1575-140f-4343-847d-9051af68c426@b838c",
+      "displayName": "",
+      "id": "b838c",
+      "name": "file15.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d5851": {
+      "importer": "texture",
+      "uuid": "717e1575-140f-4343-847d-9051af68c426@d5851",
+      "displayName": "",
+      "id": "d5851",
+      "name": "file15.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "717e1575-140f-4343-847d-9051af68c426@b838c"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4c1a6": {
+      "importer": "gltf-material",
+      "uuid": "717e1575-140f-4343-847d-9051af68c426@4c1a6",
+      "displayName": "",
+      "id": "4c1a6",
+      "name": "Gyoza1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2c291": {
+      "importer": "gltf-scene",
+      "uuid": "717e1575-140f-4343-847d-9051af68c426@2c291",
+      "displayName": "",
+      "id": "2c291",
+      "name": "Gyoza.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file15",
+        "uri": "717e1575-140f-4343-847d-9051af68c426@b838c"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "717e1575-140f-4343-847d-9051af68c426@2c291",
+    "assetFinder": {
+      "meshes": [
+        "717e1575-140f-4343-847d-9051af68c426@1d30c"
+      ],
+      "skeletons": [],
+      "textures": [
+        "717e1575-140f-4343-847d-9051af68c426@d5851"
+      ],
+      "materials": [
+        "717e1575-140f-4343-847d-9051af68c426@4c1a6"
+      ],
+      "scenes": [
+        "717e1575-140f-4343-847d-9051af68c426@2c291"
+      ]
+    }
+  }
+}

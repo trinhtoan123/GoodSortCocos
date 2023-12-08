@@ -1,6 +1,8 @@
 import { _decorator, BoxCollider, CCInteger, Component, geometry, InstancedBuffer, Node, PhysicsSystem, v3, Vec3 } from 'cc';
 import { ItemElement } from './ItemElement';
 import { BoxElement } from './BoxElement';
+import { LevelUnit } from './LevelUnit';
+import { GameManager } from './GameManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('LayerItem')
@@ -14,6 +16,7 @@ export class LayerItem extends Component {
 
     @property(Boolean)
     layerNull: Boolean;
+
 
     InitLayer(box: BoxElement) {
         this.box = box;
@@ -76,6 +79,10 @@ export class LayerItem extends Component {
         }
         this.box.UpdateLayer();
         this.box.CheckWin();
+        this.box.DropBox();
+        GameManager.getInstance().EndTutorial();
+        GameManager.getInstance().SetCountMatch();
+       
     }
 
     IsLayerContainEmpty(): boolean {

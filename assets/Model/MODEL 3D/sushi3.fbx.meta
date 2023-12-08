@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b6728325-9872-4de8-9826-dc16b273ef62",
+  "files": [],
+  "subMetas": {
+    "89876": {
+      "importer": "gltf-mesh",
+      "uuid": "b6728325-9872-4de8-9826-dc16b273ef62@89876",
+      "displayName": "",
+      "id": "89876",
+      "name": "sushi3.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "b6728325-9872-4de8-9826-dc16b273ef62@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "b6728325-9872-4de8-9826-dc16b273ef62@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b6728325-9872-4de8-9826-dc16b273ef62@43c71"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "de64b": {
+      "importer": "gltf-material",
+      "uuid": "b6728325-9872-4de8-9826-dc16b273ef62@de64b",
+      "displayName": "",
+      "id": "de64b",
+      "name": "object_7.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "2f4df": {
+      "importer": "gltf-scene",
+      "uuid": "b6728325-9872-4de8-9826-dc16b273ef62@2f4df",
+      "displayName": "",
+      "id": "2f4df",
+      "name": "sushi3.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "b6728325-9872-4de8-9826-dc16b273ef62@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "b6728325-9872-4de8-9826-dc16b273ef62@2f4df",
+    "assetFinder": {
+      "meshes": [
+        "b6728325-9872-4de8-9826-dc16b273ef62@89876"
+      ],
+      "skeletons": [],
+      "textures": [
+        "b6728325-9872-4de8-9826-dc16b273ef62@d20e9"
+      ],
+      "materials": [
+        "b6728325-9872-4de8-9826-dc16b273ef62@de64b"
+      ],
+      "scenes": [
+        "b6728325-9872-4de8-9826-dc16b273ef62@2f4df"
+      ]
+    }
+  }
+}

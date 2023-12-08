@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "71c3d123-2f4b-464e-92d9-d34e68465702",
+  "files": [],
+  "subMetas": {
+    "2bc99": {
+      "importer": "gltf-mesh",
+      "uuid": "71c3d123-2f4b-464e-92d9-d34e68465702@2bc99",
+      "displayName": "",
+      "id": "2bc99",
+      "name": "doll.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e0f4d": {
+      "importer": "texture",
+      "uuid": "71c3d123-2f4b-464e-92d9-d34e68465702@e0f4d",
+      "displayName": "",
+      "id": "e0f4d",
+      "name": "JapaneseWoodenDo1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/MODEL 3D/DOLL/texture.jpeg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f058f": {
+      "importer": "gltf-material",
+      "uuid": "71c3d123-2f4b-464e-92d9-d34e68465702@f058f",
+      "displayName": "",
+      "id": "f058f",
+      "name": "JapaneseWoodenDo1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03e8a": {
+      "importer": "gltf-scene",
+      "uuid": "71c3d123-2f4b-464e-92d9-d34e68465702@03e8a",
+      "displayName": "",
+      "id": "03e8a",
+      "name": "doll.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "JapaneseWoodenDo1F",
+        "uri": "db://assets/Model/MODEL 3D/DOLL/texture.jpeg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "71c3d123-2f4b-464e-92d9-d34e68465702@03e8a",
+    "assetFinder": {
+      "meshes": [
+        "71c3d123-2f4b-464e-92d9-d34e68465702@2bc99"
+      ],
+      "skeletons": [],
+      "textures": [
+        "71c3d123-2f4b-464e-92d9-d34e68465702@e0f4d"
+      ],
+      "materials": [
+        "71c3d123-2f4b-464e-92d9-d34e68465702@f058f"
+      ],
+      "scenes": [
+        "71c3d123-2f4b-464e-92d9-d34e68465702@03e8a"
+      ]
+    }
+  }
+}

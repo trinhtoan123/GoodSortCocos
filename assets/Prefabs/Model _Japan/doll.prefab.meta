@@ -1,0 +1,13 @@
+{
+  "ver": "1.1.40",
+  "importer": "prefab",
+  "imported": true,
+  "uuid": "f56f854f-0073-406c-8b1c-ca24db32d304",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {},
+  "userData": {
+    "syncNodeName": "doll"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a",
+  "files": [],
+  "subMetas": {
+    "046ee": {
+      "importer": "gltf-mesh",
+      "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a@046ee",
+      "displayName": "",
+      "id": "046ee",
+      "name": "sakura.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "bf30a": {
+      "importer": "gltf-embeded-image",
+      "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a@bf30a",
+      "displayName": "",
+      "id": "bf30a",
+      "name": "Sakura1F.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "869d1": {
+      "importer": "texture",
+      "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a@869d1",
+      "displayName": "",
+      "id": "869d1",
+      "name": "Sakura1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "b011f6e3-637a-416b-ac06-70b497b2560a@bf30a"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "67fe0": {
+      "importer": "gltf-material",
+      "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a@67fe0",
+      "displayName": "",
+      "id": "67fe0",
+      "name": "Sakura1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "eebe0": {
+      "importer": "gltf-scene",
+      "uuid": "b011f6e3-637a-416b-ac06-70b497b2560a@eebe0",
+      "displayName": "",
+      "id": "eebe0",
+      "name": "sakura.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Sakura1F",
+        "uri": "b011f6e3-637a-416b-ac06-70b497b2560a@bf30a"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "b011f6e3-637a-416b-ac06-70b497b2560a@eebe0",
+    "assetFinder": {
+      "meshes": [
+        "b011f6e3-637a-416b-ac06-70b497b2560a@046ee"
+      ],
+      "skeletons": [],
+      "textures": [
+        "b011f6e3-637a-416b-ac06-70b497b2560a@869d1"
+      ],
+      "materials": [
+        "b011f6e3-637a-416b-ac06-70b497b2560a@67fe0"
+      ],
+      "scenes": [
+        "b011f6e3-637a-416b-ac06-70b497b2560a@eebe0"
+      ]
+    }
+  }
+}

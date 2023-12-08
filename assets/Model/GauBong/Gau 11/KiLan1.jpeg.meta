@@ -1,0 +1,42 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "f19b8935-33c3-41f7-8a50-5e876a060d67",
+  "files": [
+    ".jpeg",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "f19b8935-33c3-41f7-8a50-5e876a060d67@6c48a",
+      "displayName": "KiLan1",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f19b8935-33c3-41f7-8a50-5e876a060d67",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": false,
+    "redirect": "f19b8935-33c3-41f7-8a50-5e876a060d67@6c48a"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "c6047720-55b6-4fb0-a653-1abe56a442eb",
+  "files": [
+    ".jpeg",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "c6047720-55b6-4fb0-a653-1abe56a442eb@6c48a",
+      "displayName": "SUSHI3",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c6047720-55b6-4fb0-a653-1abe56a442eb",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": false,
+    "redirect": "c6047720-55b6-4fb0-a653-1abe56a442eb@6c48a"
+  }
+}

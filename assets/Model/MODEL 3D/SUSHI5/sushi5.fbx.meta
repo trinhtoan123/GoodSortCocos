@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "1fe46a81-8ee2-4a2f-8346-5984b90aa444",
+  "files": [],
+  "subMetas": {
+    "24605": {
+      "importer": "gltf-material",
+      "uuid": "1fe46a81-8ee2-4a2f-8346-5984b90aa444@24605",
+      "displayName": "",
+      "id": "24605",
+      "name": "sushi-cucumber.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "d1acd": {
+      "importer": "gltf-mesh",
+      "uuid": "1fe46a81-8ee2-4a2f-8346-5984b90aa444@d1acd",
+      "displayName": "",
+      "id": "d1acd",
+      "name": "sushi5.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1da29": {
+      "importer": "texture",
+      "uuid": "1fe46a81-8ee2-4a2f-8346-5984b90aa444@1da29",
+      "displayName": "",
+      "id": "1da29",
+      "name": "Map #2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/MODEL 3D/SUSHI5/sushi-cucumber.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0005e": {
+      "importer": "gltf-scene",
+      "uuid": "1fe46a81-8ee2-4a2f-8346-5984b90aa444@0005e",
+      "displayName": "",
+      "id": "0005e",
+      "name": "sushi5.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #2",
+        "uri": "db://assets/Model/MODEL 3D/SUSHI5/sushi-cucumber.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "1fe46a81-8ee2-4a2f-8346-5984b90aa444@0005e",
+    "assetFinder": {
+      "meshes": [
+        "1fe46a81-8ee2-4a2f-8346-5984b90aa444@d1acd"
+      ],
+      "skeletons": [],
+      "textures": [
+        "1fe46a81-8ee2-4a2f-8346-5984b90aa444@1da29"
+      ],
+      "materials": [
+        "1fe46a81-8ee2-4a2f-8346-5984b90aa444@24605"
+      ],
+      "scenes": [
+        "1fe46a81-8ee2-4a2f-8346-5984b90aa444@0005e"
+      ]
+    }
+  }
+}

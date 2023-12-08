@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d",
+  "files": [],
+  "subMetas": {
+    "01a55": {
+      "importer": "gltf-mesh",
+      "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@01a55",
+      "displayName": "",
+      "id": "01a55",
+      "name": "polySurface1.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a2364": {
+      "importer": "gltf-embeded-image",
+      "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@a2364",
+      "displayName": "",
+      "id": "a2364",
+      "name": "Map #1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "6e70c": {
+      "importer": "texture",
+      "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@6e70c",
+      "displayName": "",
+      "id": "6e70c",
+      "name": "Map #1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@a2364"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "df879": {
+      "importer": "gltf-material",
+      "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@df879",
+      "displayName": "",
+      "id": "df879",
+      "name": "sushi-salmon1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1b474": {
+      "importer": "gltf-scene",
+      "uuid": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@1b474",
+      "displayName": "",
+      "id": "1b474",
+      "name": "SUSHI1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #1",
+        "uri": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@a2364"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@1b474",
+    "assetFinder": {
+      "meshes": [
+        "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@01a55"
+      ],
+      "skeletons": [],
+      "textures": [
+        "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@6e70c"
+      ],
+      "materials": [
+        "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@df879"
+      ],
+      "scenes": [
+        "108b8d61-ba5c-4cab-8a7d-5ef0ce69821d@1b474"
+      ]
+    }
+  }
+}

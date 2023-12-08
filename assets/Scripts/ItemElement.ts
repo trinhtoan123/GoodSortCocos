@@ -113,28 +113,29 @@ export class ItemElement extends Component {
                     this.node.active = false;
                 }
             }).start();
+        
     }
     SetMaterialOn(){
-        if(this.Model!=null){
-            this.node.scale = new Vec3(0.2,0.2,0.2);
-            tween(this.node).to(0.2, 
-                {scale:new Vec3(1,1,1),}, 
-                {
-                }).start();
-            this.Model.getComponent(MeshRenderer).material = this.materialOn;
-        }
-        else{
-            console.log("Model null On"+ this.id + this.currentBox.node.name);
-        }
+        // if(this.Model!=null){
+        //     this.node.scale = new Vec3(0.2,0.2,0.2);
+        //     tween(this.node).to(0.2, 
+        //         {scale:new Vec3(1,1,1),}, 
+        //         {
+        //         }).start();
+        //     this.Model.getComponent(MeshRenderer).material = this.materialOn;
+        // }
+        // else{
+        //     console.log("Model null On"+ this.id + this.currentBox.node.name);
+        // }
     }
     SetMaterialOff(){
-        if(this.Model!=null){
-            this.Model.getComponent(MeshRenderer).material = this.materialOff;
+        // if(this.Model!=null){
+        //     this.Model.getComponent(MeshRenderer).material = this.materialOff;
 
-        }
-        else{
-            console.log("Model null OFF");
-        }
+        // }
+        // else{
+        //     console.log("Model null OFF");
+        // }
     }
     
 }

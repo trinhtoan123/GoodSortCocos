@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "355fac10-5bba-43d5-83de-b152bfde28a0",
+  "files": [],
+  "subMetas": {
+    "dd3ce": {
+      "importer": "gltf-mesh",
+      "uuid": "355fac10-5bba-43d5-83de-b152bfde28a0@dd3ce",
+      "displayName": "",
+      "id": "dd3ce",
+      "name": "súhi4.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "1da29": {
+      "importer": "texture",
+      "uuid": "355fac10-5bba-43d5-83de-b152bfde28a0@1da29",
+      "displayName": "",
+      "id": "1da29",
+      "name": "Map #2.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/MODEL 3D/SUSHI4/sushi-veg.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "03aea": {
+      "importer": "gltf-material",
+      "uuid": "355fac10-5bba-43d5-83de-b152bfde28a0@03aea",
+      "displayName": "",
+      "id": "03aea",
+      "name": "sushi-veg.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "b891e": {
+      "importer": "gltf-scene",
+      "uuid": "355fac10-5bba-43d5-83de-b152bfde28a0@b891e",
+      "displayName": "",
+      "id": "b891e",
+      "name": "sushi4.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #2",
+        "uri": "db://assets/Model/MODEL 3D/SUSHI4/sushi-veg.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "355fac10-5bba-43d5-83de-b152bfde28a0@b891e",
+    "assetFinder": {
+      "meshes": [
+        "355fac10-5bba-43d5-83de-b152bfde28a0@dd3ce"
+      ],
+      "skeletons": [],
+      "textures": [
+        "355fac10-5bba-43d5-83de-b152bfde28a0@1da29"
+      ],
+      "materials": [
+        "355fac10-5bba-43d5-83de-b152bfde28a0@03aea"
+      ],
+      "scenes": [
+        "355fac10-5bba-43d5-83de-b152bfde28a0@b891e"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2",
+  "files": [],
+  "subMetas": {
+    "4c3bc": {
+      "importer": "gltf-mesh",
+      "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@4c3bc",
+      "displayName": "",
+      "id": "4c3bc",
+      "name": "Yakulttt.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5d365": {
+      "importer": "gltf-embeded-image",
+      "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@5d365",
+      "displayName": "",
+      "id": "5d365",
+      "name": "file47.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "2d938": {
+      "importer": "texture",
+      "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@2d938",
+      "displayName": "",
+      "id": "2d938",
+      "name": "file47.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@5d365"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a8651": {
+      "importer": "gltf-material",
+      "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@a8651",
+      "displayName": "",
+      "id": "a8651",
+      "name": "Yakulttt1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0179e": {
+      "importer": "gltf-scene",
+      "uuid": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@0179e",
+      "displayName": "",
+      "id": "0179e",
+      "name": "yakulttt.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file47",
+        "uri": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@5d365"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@0179e",
+    "assetFinder": {
+      "meshes": [
+        "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@4c3bc"
+      ],
+      "skeletons": [],
+      "textures": [
+        "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@2d938"
+      ],
+      "materials": [
+        "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@a8651"
+      ],
+      "scenes": [
+        "696e38d8-c1ef-4a3c-99aa-fbd2c25200d2@0179e"
+      ]
+    }
+  }
+}

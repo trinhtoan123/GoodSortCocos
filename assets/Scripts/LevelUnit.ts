@@ -1,4 +1,4 @@
-import { _decorator, Component, Node } from 'cc';
+import { _decorator, BoxCollider, CCInteger, Component, EventKeyboard, input, Input, InstancedBuffer, KeyCode, Node, tween, Vec3 } from 'cc';
 import { ItemElement } from './ItemElement';
 import { BoxElement } from './BoxElement';
 import { GAME_STATE, GameManager } from './GameManager';
@@ -16,8 +16,13 @@ export class LevelUnit extends Component {
     listItem: ItemElement[];
 
 
+    @property(ItemElement)
+    itemTutorila: ItemElement;
+
+
     @property([BoxElement])
     lstBox: BoxElement[];
+
 
     public static getInstance(): LevelUnit {
         if (!LevelUnit.instance) {
@@ -26,7 +31,7 @@ export class LevelUnit extends Component {
 
         return LevelUnit.instance;
     }
-    
+
     StartLevel(){
         this.GetInstanceId();
     }
@@ -41,24 +46,22 @@ export class LevelUnit extends Component {
 
 
     }
-    CheckWin() {
-        if (GameManager.getInstance().GameState == GAME_STATE.Play) {
-
-            for (let i = 0; i < this.lstBox.length; i++) {
-                if (!this.lstBox[i].CheckWin()) {
-                    return;
-                }
-            }
-            if (!this.check) {
-                GameManager.getInstance().Win()
-            }
+    LevelTutorial(isActive: boolean){
+        for (let i = 0; i < this.listItem.length;i++) {
+            this.listItem[i].getComponent(BoxCollider).enabled = isActive;
         }
+        if(this.itemTutorila.node.active){
+            this.itemTutorila.getComponent(BoxCollider).enabled = true;
+        }
+    }
+    CheckWin() {
+        if (GameManager.getInstance().countMatch>=4){
+            GameManager.getInstance().Win()
+        }
+       
 
     }
-     Tutorial(){
-
-    }
-
+  
 
 }
 

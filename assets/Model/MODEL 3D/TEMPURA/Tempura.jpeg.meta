@@ -1,0 +1,42 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "f4106442-205a-4471-9aaa-551b5530459c",
+  "files": [
+    ".jpeg",
+    ".json"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "f4106442-205a-4471-9aaa-551b5530459c@6c48a",
+      "displayName": "Tempura",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "f4106442-205a-4471-9aaa-551b5530459c",
+        "visible": true
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "texture",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": false,
+    "redirect": "f4106442-205a-4471-9aaa-551b5530459c@6c48a"
+  }
+}

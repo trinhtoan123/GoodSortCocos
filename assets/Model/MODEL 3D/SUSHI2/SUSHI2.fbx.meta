@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "670155f2-8eb7-4566-a9c0-78ba923b21a5",
+  "files": [],
+  "subMetas": {
+    "66686": {
+      "importer": "gltf-material",
+      "uuid": "670155f2-8eb7-4566-a9c0-78ba923b21a5@66686",
+      "displayName": "",
+      "id": "66686",
+      "name": "sushi-salmon.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "789c7": {
+      "importer": "gltf-mesh",
+      "uuid": "670155f2-8eb7-4566-a9c0-78ba923b21a5@789c7",
+      "displayName": "",
+      "id": "789c7",
+      "name": "SUSHI2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "6e70c": {
+      "importer": "texture",
+      "uuid": "670155f2-8eb7-4566-a9c0-78ba923b21a5@6e70c",
+      "displayName": "",
+      "id": "6e70c",
+      "name": "Map #1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/MODEL 3D/SUSHI2/sushi-salmon.png"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0fb7b": {
+      "importer": "gltf-scene",
+      "uuid": "670155f2-8eb7-4566-a9c0-78ba923b21a5@0fb7b",
+      "displayName": "",
+      "id": "0fb7b",
+      "name": "SUSHI2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Map #1",
+        "uri": "db://assets/Model/MODEL 3D/SUSHI2/sushi-salmon.png"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "670155f2-8eb7-4566-a9c0-78ba923b21a5@0fb7b",
+    "assetFinder": {
+      "meshes": [
+        "670155f2-8eb7-4566-a9c0-78ba923b21a5@789c7"
+      ],
+      "skeletons": [],
+      "textures": [
+        "670155f2-8eb7-4566-a9c0-78ba923b21a5@6e70c"
+      ],
+      "materials": [
+        "670155f2-8eb7-4566-a9c0-78ba923b21a5@66686"
+      ],
+      "scenes": [
+        "670155f2-8eb7-4566-a9c0-78ba923b21a5@0fb7b"
+      ]
+    }
+  }
+}

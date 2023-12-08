@@ -1,4 +1,4 @@
-import { _decorator, Component, director, instantiate, Label, Node, Sprite, tween, Vec3 } from 'cc';
+import { _decorator, CCInteger, Component, director, instantiate, Label, Node, Sprite, tween, v3, Vec3 } from 'cc';
 import { LevelUnit } from './LevelUnit';
 const { ccclass, property } = _decorator;
 export enum GAME_STATE {
@@ -26,6 +26,9 @@ export class GameManager extends Component {
     @property(Label)
     TimeCountDownText: Label;
 
+    @property(Label)
+    txtDownLoad: Label;
+
     @property(Sprite)
     btnDownLoad:Sprite;
 
@@ -35,8 +38,14 @@ export class GameManager extends Component {
     @property(Node)
     levelCurr:Node;
 
-    @property(Sprite)
-    handTutorial:Sprite;
+    @property(Node)
+    handTutorial:Node;
+
+    @property(Boolean)
+    isTutorial:boolean = false;
+
+    countMatch: number;
+
 
     private constructor() {
         super();
@@ -52,7 +61,7 @@ export class GameManager extends Component {
         this.GameState = GAME_STATE.Init; 
         this.winNode.node.active = false;
         this.loseNode.node.active = false;
-        this.SpawnLevel();
+        this.StartGame();
     }
     StartGame() {
         console.log('[StartGame]');
@@ -60,9 +69,11 @@ export class GameManager extends Component {
         this.GameState = GAME_STATE.Play; 
         this.HomeUI.node.active = false;
         this.TimePlay = 1500;
+        this.countMatch=0;
         this.level.getComponent(LevelUnit).StartLevel();
-    }
-    SpawnLevel(){
+        this.StartTutorial();
+        this.AnimBtnDownload();
+
     }
     update(deltaTime: number) {
         if (this.GameState != GAME_STATE.Play)
@@ -76,7 +87,7 @@ export class GameManager extends Component {
 
         return;
     }
-    this.TimeCountDownText.string = Math.ceil(this.TimePlay).toString() + "s";
+    // this.TimeCountDownText.string = Math.ceil(this.TimePlay).toString() + "s";
     }
 
     Lose(){
@@ -89,13 +100,51 @@ export class GameManager extends Component {
         this.GameState = GAME_STATE.Over;
         console.log("[GameEnd_Win]");
     }
-    Tutorial(){
-         tween(this.handTutorial.node.position).to(0.5, new Vec3(4.5,0,2),
+    StartTutorial(){
+        this.isTutorial = false;
+       this.level.getComponent(LevelUnit).LevelTutorial(false);
+        let pos = this.handTutorial.position;
+        if(this.handTutorial.active){
+            tween(this.handTutorial.position).to(1, new Vec3(3.7,-2.5,2),
             {
-                // onUpdate: (target: Vec3, radius: number) => {
-                //     this.layerTarget.node.position = target;
-                // },
-            }).start();
+                onUpdate: (target: Vec3, radius: number) => {
+                    this.handTutorial.position = target;
+                },
+                onComplete:() =>{
+                    this.handTutorial.position = new Vec3(3.7,0,2);
+                },
+            })
+            .repeat(9999)
+            .start();
+
+        }
+        
+    }
+    EndTutorial(){
+        if(!this.isTutorial){
+            this.level.getComponent(LevelUnit).LevelTutorial(true);
+            this.handTutorial.active = false;
+            this.isTutorial = true;
+        }
+     
+    }
+
+    SetCountMatch(){
+        this.countMatch+=1;
+        this.TimeCountDownText.string = Math.ceil(this.countMatch).toString() + "s";
+
+    }
+    AnimBtnDownload(){
+        // tween(this.txtDownLoad.node).to(0.5, 
+        //     {scale:new Vec3(1.1,1.1,1.1),}, 
+        //     {
+        //         easing: 'backOut',
+        //         onComplete: ()=>{
+        //            this.txtDownLoad.node.scale = Vec3.ONE;
+        //         }
+        //     })
+        //     .repeatForever()
+        //     .start();
 
     }
 

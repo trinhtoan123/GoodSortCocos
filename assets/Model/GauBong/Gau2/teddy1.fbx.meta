@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "c9576632-324a-4771-93e8-167980424673",
+  "files": [],
+  "subMetas": {
+    "73d51": {
+      "importer": "gltf-mesh",
+      "uuid": "c9576632-324a-4771-93e8-167980424673@73d51",
+      "displayName": "",
+      "id": "73d51",
+      "name": "teddy.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "ad9a3": {
+      "importer": "gltf-embeded-image",
+      "uuid": "c9576632-324a-4771-93e8-167980424673@ad9a3",
+      "displayName": "",
+      "id": "ad9a3",
+      "name": "file26.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "35d3f": {
+      "importer": "texture",
+      "uuid": "c9576632-324a-4771-93e8-167980424673@35d3f",
+      "displayName": "",
+      "id": "35d3f",
+      "name": "file26.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "c9576632-324a-4771-93e8-167980424673@ad9a3"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e29f2": {
+      "importer": "gltf-material",
+      "uuid": "c9576632-324a-4771-93e8-167980424673@e29f2",
+      "displayName": "",
+      "id": "e29f2",
+      "name": "teddy1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4409d": {
+      "importer": "gltf-scene",
+      "uuid": "c9576632-324a-4771-93e8-167980424673@4409d",
+      "displayName": "",
+      "id": "4409d",
+      "name": "teddy1.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file26",
+        "uri": "c9576632-324a-4771-93e8-167980424673@ad9a3"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "c9576632-324a-4771-93e8-167980424673@4409d",
+    "assetFinder": {
+      "meshes": [
+        "c9576632-324a-4771-93e8-167980424673@73d51"
+      ],
+      "skeletons": [],
+      "textures": [
+        "c9576632-324a-4771-93e8-167980424673@35d3f"
+      ],
+      "materials": [
+        "c9576632-324a-4771-93e8-167980424673@e29f2"
+      ],
+      "scenes": [
+        "c9576632-324a-4771-93e8-167980424673@4409d"
+      ]
+    }
+  }
+}

@@ -2,7 +2,9 @@
   "general": {
     "designResolution": {
       "width": 1080,
-      "height": 1920
-    }
+      "height": 1920,
+      "fitHeight": false
+    },
+    "renderPipeline": "fd8ec536-a354-4a17-9c74-4f3883c378c8"
   }
 }

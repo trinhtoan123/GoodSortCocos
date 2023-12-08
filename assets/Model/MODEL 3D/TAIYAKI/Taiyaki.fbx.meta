@@ -1,0 +1,108 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff",
+  "files": [],
+  "subMetas": {
+    "3ec27": {
+      "importer": "gltf-mesh",
+      "uuid": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@3ec27",
+      "displayName": "",
+      "id": "3ec27",
+      "name": "Taiyaki.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "8185a": {
+      "importer": "texture",
+      "uuid": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@8185a",
+      "displayName": "",
+      "id": "8185a",
+      "name": "object_2F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": false,
+        "imageUuidOrDatabaseUri": "db://assets/Model/MODEL 3D/TAIYAKI/texture.jpg"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "c4639": {
+      "importer": "gltf-material",
+      "uuid": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@c4639",
+      "displayName": "",
+      "id": "c4639",
+      "name": "object_2.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "5a864": {
+      "importer": "gltf-scene",
+      "uuid": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@5a864",
+      "displayName": "",
+      "id": "5a864",
+      "name": "Taiyaki.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "object_2F",
+        "uri": "db://assets/Model/MODEL 3D/TAIYAKI/texture.jpg"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@5a864",
+    "assetFinder": {
+      "meshes": [
+        "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@3ec27"
+      ],
+      "skeletons": [],
+      "textures": [
+        "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@8185a"
+      ],
+      "materials": [
+        "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@c4639"
+      ],
+      "scenes": [
+        "7dabe2f6-2a2f-4b73-a2cd-45d1aaac23ff@5a864"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638",
+  "files": [],
+  "subMetas": {
+    "ca612": {
+      "importer": "gltf-mesh",
+      "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638@ca612",
+      "displayName": "",
+      "id": "ca612",
+      "name": "Onigiri2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "a2a2d": {
+      "importer": "gltf-embeded-image",
+      "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638@a2a2d",
+      "displayName": "",
+      "id": "a2a2d",
+      "name": "file14.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "8852e": {
+      "importer": "texture",
+      "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638@8852e",
+      "displayName": "",
+      "id": "8852e",
+      "name": "file14.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "97cf38b6-1f56-4e0b-b34a-29c67c565638@a2a2d"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "50a07": {
+      "importer": "gltf-material",
+      "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638@50a07",
+      "displayName": "",
+      "id": "50a07",
+      "name": "Onigiri1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "e0a07": {
+      "importer": "gltf-scene",
+      "uuid": "97cf38b6-1f56-4e0b-b34a-29c67c565638@e0a07",
+      "displayName": "",
+      "id": "e0a07",
+      "name": "Onigiri2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file14",
+        "uri": "97cf38b6-1f56-4e0b-b34a-29c67c565638@a2a2d"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "97cf38b6-1f56-4e0b-b34a-29c67c565638@e0a07",
+    "assetFinder": {
+      "meshes": [
+        "97cf38b6-1f56-4e0b-b34a-29c67c565638@ca612"
+      ],
+      "skeletons": [],
+      "textures": [
+        "97cf38b6-1f56-4e0b-b34a-29c67c565638@8852e"
+      ],
+      "materials": [
+        "97cf38b6-1f56-4e0b-b34a-29c67c565638@50a07"
+      ],
+      "scenes": [
+        "97cf38b6-1f56-4e0b-b34a-29c67c565638@e0a07"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9",
+  "files": [],
+  "subMetas": {
+    "0e76b": {
+      "importer": "gltf-mesh",
+      "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@0e76b",
+      "displayName": "",
+      "id": "0e76b",
+      "name": "ramen.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "43c71": {
+      "importer": "gltf-embeded-image",
+      "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@43c71",
+      "displayName": "",
+      "id": "43c71",
+      "name": "file1.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "d20e9": {
+      "importer": "texture",
+      "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@d20e9",
+      "displayName": "",
+      "id": "d20e9",
+      "name": "file1.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@43c71"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "cc75b": {
+      "importer": "gltf-material",
+      "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@cc75b",
+      "displayName": "",
+      "id": "cc75b",
+      "name": "object_3.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "96e19": {
+      "importer": "gltf-scene",
+      "uuid": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@96e19",
+      "displayName": "",
+      "id": "96e19",
+      "name": "ramen.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "file1",
+        "uri": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@43c71"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "2b2eddc1-df51-47c0-8c53-4a89310fcff9@96e19",
+    "assetFinder": {
+      "meshes": [
+        "2b2eddc1-df51-47c0-8c53-4a89310fcff9@0e76b"
+      ],
+      "skeletons": [],
+      "textures": [
+        "2b2eddc1-df51-47c0-8c53-4a89310fcff9@d20e9"
+      ],
+      "materials": [
+        "2b2eddc1-df51-47c0-8c53-4a89310fcff9@cc75b"
+      ],
+      "scenes": [
+        "2b2eddc1-df51-47c0-8c53-4a89310fcff9@96e19"
+      ]
+    }
+  }
+}

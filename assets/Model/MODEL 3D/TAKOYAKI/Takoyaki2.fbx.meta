@@ -1,0 +1,125 @@
+{
+  "ver": "2.3.1",
+  "importer": "fbx",
+  "imported": true,
+  "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220",
+  "files": [],
+  "subMetas": {
+    "15926": {
+      "importer": "gltf-embeded-image",
+      "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@15926",
+      "displayName": "",
+      "id": "15926",
+      "name": "Takoyaki1F.image",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.3",
+      "imported": true,
+      "files": [
+        ".json",
+        ".png"
+      ],
+      "subMetas": {}
+    },
+    "59dfc": {
+      "importer": "gltf-mesh",
+      "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@59dfc",
+      "displayName": "",
+      "id": "59dfc",
+      "name": "Takoyaki2.mesh",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.1.0",
+      "imported": true,
+      "files": [
+        ".bin",
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "0a8cc": {
+      "importer": "texture",
+      "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@0a8cc",
+      "displayName": "",
+      "id": "0a8cc",
+      "name": "Takoyaki1F.texture",
+      "userData": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0,
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@15926"
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "faafc": {
+      "importer": "gltf-material",
+      "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@faafc",
+      "displayName": "",
+      "id": "faafc",
+      "name": "Takoyaki1.material",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.14",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "415c2": {
+      "importer": "gltf-scene",
+      "uuid": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@415c2",
+      "displayName": "",
+      "id": "415c2",
+      "name": "Takoyaki2.prefab",
+      "userData": {
+        "gltfIndex": 0
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "imageMetas": [
+      {
+        "name": "Takoyaki1F",
+        "uri": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@15926"
+      }
+    ],
+    "fbx": {
+      "smartMaterialEnabled": true
+    },
+    "redirect": "e633a5da-8a55-4b60-b0e2-cff0a64ae220@415c2",
+    "assetFinder": {
+      "meshes": [
+        "e633a5da-8a55-4b60-b0e2-cff0a64ae220@59dfc"
+      ],
+      "skeletons": [],
+      "textures": [
+        "e633a5da-8a55-4b60-b0e2-cff0a64ae220@0a8cc"
+      ],
+      "materials": [
+        "e633a5da-8a55-4b60-b0e2-cff0a64ae220@faafc"
+      ],
+      "scenes": [
+        "e633a5da-8a55-4b60-b0e2-cff0a64ae220@415c2"
+      ]
+    }
+  }
+}
